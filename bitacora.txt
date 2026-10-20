@@ -1,0 +1,22 @@
+Punto 4: 
+URL completa: http://127.0.0.1:5500/index.html
+Protocolo: http
+Host: 127.0.0.1
+Puerto: 5500
+Ruta: /index.html
+metodo: GET
+Codigo de estado: 200
+
+Punto 5:
+Ruta probada: /promociones.html
+Codigo obtenido: 404 Not Found
+Significado: El servidor no encontro la ruta solicitada(/promociones.html), no existe la ubicación indicada.
+
+Punto 6:
+Roles: 
+- html: Este me le va a dar la estructura a la pagina, donde ira cada texto y cada parametro de la pagina, estos parametros y estructura seran aprobadas basadas en las peticiones del cliente.
+   Ejemlplo: El cliente quiere que el titulo grande sea Rueda con nosotros, y a los lados halla subtitulos y descripciones con sus funcionalidades, esa estructura se la daremos con el html.
+- CSS: Este me le dara vida a la pagina web, con la estructura lista, le damos colores y rasgos para que sea vea mejor visualmente , acorde a los gustos del cliente.
+   Ejemlplo: El cliente quiere que los subtitulos sean en cursiva y su tono sea azul oscuro con un fondo gris. Eso se lo daremos con nuestro CSS.
+- JavaScript: Este me le dara la funcionalidades a la pagina, la parte en la que si el usuario pide una de ñas funcionalidades lo lleve a otro apartado en la que se le explicara mas y sus precios, las funcionalidades de la pagina son aprobadas por el cliente.
+   Ejemlplo: El cliente quiere que si le da a la funcionalidad turismo en medellin en bicicleta, lo lleve a un apartado de cual es el valor, mas descrpcion y horarios, eso me lo hace mi JavaScript el cuando el usuario le de a la funcionalidad lo lleve a ese apartado.
