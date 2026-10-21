@@ -1,3 +1,4 @@
+Ejercicio 1
 Punto 4: 
 URL completa: http://127.0.0.1:5500/index.html
 Protocolo: http
@@ -20,3 +21,6 @@ Roles:
    Ejemlplo: El cliente quiere que los subtitulos sean en cursiva y su tono sea azul oscuro con un fondo gris. Eso se lo daremos con nuestro CSS.
 - JavaScript: Este me le dara la funcionalidades a la pagina, la parte en la que si el usuario pide una de ñas funcionalidades lo lleve a otro apartado en la que se le explicara mas y sus precios, las funcionalidades de la pagina son aprobadas por el cliente.
    Ejemlplo: El cliente quiere que si le da a la funcionalidad turismo en medellin en bicicleta, lo lleve a un apartado de cual es el valor, mas descrpcion y horarios, eso me lo hace mi JavaScript el cuando el usuario le de a la funcionalidad lo lleve a ese apartado.
+
+Ejercicio 4
+Tabla de rutas
