@@ -1,26 +1,119 @@
-Ejercicio 1
-Punto 4: 
-URL completa: http://127.0.0.1:5500/index.html
-Protocolo: http
-Host: 127.0.0.1
-Puerto: 5500
-Ruta: /index.html
-metodo: GET
-Codigo de estado: 200
 
-Punto 5:
-Ruta probada: /promociones.html
-Codigo obtenido: 404 Not Found
-Significado: El servidor no encontro la ruta solicitada(/promociones.html), no existe la ubicación indicada.
+Día 1: Construcción de un sitio web con HTML
 
-Punto 6:
+Mini-reto 1: Kilómetro 0 — Repositorio y página base
+
+Punto 4: Análisis de la solicitud en Network
+- URL completa: http://127.0.0.1:5500/index.html
+- Protocolo: http
+- Host: 127.0.0.1
+- Puerto: 5500
+- Ruta: /index.html
+- metodo: GET
+- Codigo de estado: 200
+
+El navegador hizo una solicitud al servidor para obtener el archivo index.html, l código 200 significa que la solicitud se realizó correctamente.
+
+Punto 5: Prueba de una ruta inexistente
+- Ruta probada: /promociones.html
+- Codigo obtenido: 404 Not Found
+- Significado: El servidor no encontro la ruta solicitada(/promociones.html), no existe la ubicación indicada.
+
+Punto 6: Función de HTML, CSS y JavaScript
 Roles: 
 - html: Este me le va a dar la estructura a la pagina, donde ira cada texto y cada parametro de la pagina, estos parametros y estructura seran aprobadas basadas en las peticiones del cliente.
-   Ejemlplo: El cliente quiere que el titulo grande sea Rueda con nosotros, y a los lados halla subtitulos y descripciones con sus funcionalidades, esa estructura se la daremos con el html.
+   Ejemplo: El cliente quiere que el titulo grande sea Rueda con nosotros, y a los lados halla subtitulos y descripciones con sus funcionalidades, esa estructura se la daremos con el html.
 - CSS: Este me le dara vida a la pagina web, con la estructura lista, le damos colores y rasgos para que sea vea mejor visualmente , acorde a los gustos del cliente.
-   Ejemlplo: El cliente quiere que los subtitulos sean en cursiva y su tono sea azul oscuro con un fondo gris. Eso se lo daremos con nuestro CSS.
-- JavaScript: Este me le dara la funcionalidades a la pagina, la parte en la que si el usuario pide una de ñas funcionalidades lo lleve a otro apartado en la que se le explicara mas y sus precios, las funcionalidades de la pagina son aprobadas por el cliente.
-   Ejemlplo: El cliente quiere que si le da a la funcionalidad turismo en medellin en bicicleta, lo lleve a un apartado de cual es el valor, mas descrpcion y horarios, eso me lo hace mi JavaScript el cuando el usuario le de a la funcionalidad lo lleve a ese apartado.
+   Ejemplo: El cliente quiere que los subtitulos sean en cursiva y su tono sea azul oscuro con un fondo gris. Eso se lo daremos con nuestro CSS.
+- JavaScript: Este le permite agregar interactividad y funcionalidades a una página web. Por ejemplo, puede validar los datos de un formulario de reserva, mostrar mensajes al usuario o actualizar información de la página.
+   Ejemplo: El cliente quiere validar los datos de un formulario de reserva, mostrar mensajes al usuario o actualizar información de la página con JavaScript lo puede hacer.
+   
 
-Ejercicio 4
-Tabla de rutas
+Mini-reto 2: La vitrina de Rueda Libre
+La página contiene:
+- Un encabezado con el nombre del negocio y un menú de navegación.
+- Una sección «¿Quiénes somos?» para presentar la empresa.
+- Una sección «Nuestros servicios» con información sobre el alquiler de bicicletas, los recorridos guiados y el taller básico.
+- Listas para mostrar los beneficios de los servicios.
+- Una lista ordenada con los pasos para alquilar.
+- Imágenes relacionadas con el negocio.
+- Un enlace externo a la ubicación en Google Maps.
+- Un enlace de correo electrónico mediante mailto.
+- Un enlace interno para llegar a la sección Encuéntranos.
+- También utilicé footer para organizar mejor el contenido de pie de pagina.
+
+
+Mini-reto 3: Tarifas claras — Tablas y rutas relativas
+En este mini-reto creé la página tarifas
+-La página contiene dos tablas:
+   Una tabla con las tarifas de alquiler de bicicletas según el tipo de bicicleta y el tiempo de alquiler.
+   Una tabla con los recorridos, sus distancias, duración, nivel y precio por persona.
+- Para organizar las tablas utilicé caption, thead, tbody y las etiquetas th con el atributo scope, para identificar los encabezados de las filas y columnas.
+- También agregué información sobre los elementos incluidos en las tarifas, los horarios de los recorridos y lo que deben llevar los usuarios.
+- Utilicé rutas relativas para mostrar una imagen desde la carpeta img y para conectar las páginas. Desde la página principal agregué un enlace directo a la tabla de recorridos utilizando un identificador.
+
+
+Mini-reto 4: Rueda Libre v0.1 — Sitio navegable
+En este mini-reto creé la página paginas/reservas.html, donde inclui el título Reserva tu bicicleta, un enlace de correo electrónico y los horarios de atención organizados con dl, dt y dd.
+También agregué un menú de navegación y un pie de página con el nombre del negocio, el correo electrónico y el año en las tres páginas.
+El menú permite navegar entre Inicio, Tarifas y rutas, y Reservas. Agregué enlaces para reservar desde la página principal y desde la página de tarifas.
+
+Tabla de rutas utilizadas: 
+
+1.
+- Archivo de origen:
+   index.html
+- Destino
+   paginas/tarifas.html
+- Ruta escrita en el enlace
+   paginas/tarifas.html
+
+2. 
+- Archivo de origen:
+   index.html
+- Destino
+   paginas/reservas.html
+- Ruta escrita en el enlace
+   paginas/reservas.html
+
+3.
+- Archivo de origen:
+   paginas/tarifas.html
+- Destino
+   index.html
+- Ruta escrita en el enlace
+   ../index.html
+
+4.
+- Archivo de origen:
+   paginas/tarifas.html
+- Destino
+   paginas/reservas.html
+- Ruta escrita en el enlace
+   reservas.html
+
+5.
+- Archivo de origen:
+   paginas/reservas.html
+- Destino
+   index.html
+- Ruta escrita en el enlace
+   ../index.html
+
+6.
+- Archivo de origen:
+   paginas/reservas.html
+- Destino   
+   paginas/tarifas.html
+- Ruta escrita en el enlace
+   tarifas.html
+
+7. 
+- Archivo de origen:
+   index.html
+- Destino:
+   Tabla de recorridos de tarifas.html
+- Ruta escrita en el enlace:
+   paginas/tarifas.html#Lugar
+
+Las rutas relativas permiten conectar las páginas por la ubicación de cada archivo. Cuando el archivo de destino está dentro de una carpeta se escribe el nombre de esa carpeta y luego el del archivo. Cuando se necesita regresar a la carpeta anterior, se utiliza ../.
