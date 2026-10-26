@@ -352,3 +352,12 @@ Mini-reto 8: Rueda Libre v0.2 en línea: accesible y publicada
 
 - Enlace Git hub pages:
    Pendiente, lo adjunto cuando el TL me verifique que mis actividades del dia 1 y 2 se enceuntran bien y listas para montarse a la rama principal.
+
+Día 3: Fundamentos CSS y box model
+
+Mini-reto 9: La identidad de Rueda Libre
+
+Propiedades que hereda y no hereda:
+   Al seleccionar el parrafo en DevTools muestra que hereda color y font-family desde body, background-color está aplicado al body, pero no se hereda al parrafo.
+
+Ademas en mi CSS declare las variables de colores, tipo de texto y espaciado con medida rm
