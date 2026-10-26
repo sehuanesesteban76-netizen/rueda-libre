@@ -172,3 +172,13 @@ MAIN
 
 FOOTER
 └── Información del negocio, correo y año
+
+Mini-reto 6: El formulario de reservas 
+Organización del formulario
+- Tus datos: nombre completo, documento y numero de documento, correo electrónico y celular.
+- Tu alquiler: fecha, tipo de bicicleta, plan, cantidad de bicicletas, recorrido guiado y comentarios.
+- Confirmación: aceptación de las políticas de alquiler.
+Justificación de controles
+1. Tipo de bicicleta — botones radio: Use radio porque la persona debe elegir una sola bicicleta entre urbana, montaña y eléctrica. Las opciones comparten el mismo name, así que no se pueden seleccionar varias al mismo tiempo y preferi esta porque visualmente siento que se puede ver mejor y mas comodo para el usuario que una lista desplegable.
+2. Plan — lista desplegable (select): Preferi una lista desplegable porque la persona debe escoger un plan de una lista ya hecha y definida: 1 hora, medio día o día completo.
+3. Recorrido guiado — lista desplegable (select): Use una lista desplegable para las rutas disponibles y la opción Ninguno, ya que el recorrido guiado es opcional y con esta  el usuario puede desplegar las opciones.
