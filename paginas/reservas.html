@@ -46,6 +46,66 @@
 
             </dl>
         </section>
+        <section>
+            <h2>Formulario de reserva</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Tus Datos</legend>
+                    <label for="Nombre">Nombre Completo</label>
+                    <input type="text" id="Nombre" name="Nombre">
+                    <label for="tipo-documento">Tipo de documento</label>
+                    <select name="tipo_documento" id="tipo-documento">
+                        <option value="">Selecciona tu documento</option>
+                        <option value="CC">Cedula de ciudadania</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CE">Cedula extranjera</option>
+                    </select>
+                    <label for="documento">Numero de documento</label>
+                    <input type="text" id="documento" name="Numero_de_documento">
+                    <label for="gmail">Correo Electronico</label>
+                    <input type="email" id="gmail" name="Correo_Electronico">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular">
+                </fieldset>
+                <fieldset>
+                    <legend>Tu Alquiler</legend>
+                    <label for="fecha-alquiler">Fecha del alquiler</label>
+                    <input type="date" id="fecha-alquiler" name="fecha_de_alquiler">
+                    <fieldset>
+                        <legend>Tipo de bicicleta</legend>
+                        <label for="Urbana">Urbana</label>
+                        <input type="radio" id="Urbana" name="bicicleta" value="Urbana">
+                        <label for="Montaña">Montaña</label>
+                        <input type="radio" id="Montaña" name="bicicleta" value="Montaña">
+                        <label for="Electrica">Electrica</label>
+                        <input type="radio" id="Electrica" name="bicicleta" value="Electrica">
+                    </fieldset>
+                    <label for="plan">Plan</label>
+                    <select name="plan" id="plan">
+                        <option value="1-hora">1 hora</option>
+                        <option value="medio-día">Medio Día</option>
+                        <option value="dia-completo">Día Completo</option>
+                    </select>
+                    <label for="cantidad-bicicletas">Cantidad De Bicicletas</label>
+                    <input type="number" id="cantidad-bicicletas" name="cantidad_bicicletas">
+                    <label for="recorrido-guiado">Recorrido Guiado</label>
+                    <select name="recorrido_guiado" id="recorrido-guiado">
+                        <option value="ninguno">Ninguno</option>
+                        <option value="rio-parques">Rio Parques</option>
+                        <option value="sabores-barrio">Sabores Barrio</option>
+                        <option value="reto-palmas">Reto Palmas</option>
+                    </select>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Confirmación</legend>
+                    <label for="politicas-alquiler">Acepto politicas de alquiler</label>
+                    <input type="checkbox" id="politicas-alquiler" name="aceptación_politicas_alquiler">
+                </fieldset>
+                <button type="submit">Enviar Formulario</button>
+            </form>
+        </section>
     </main>
 
     <footer>
