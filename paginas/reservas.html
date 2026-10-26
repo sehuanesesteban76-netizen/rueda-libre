@@ -52,56 +52,58 @@
                 <fieldset>
                     <legend>Tus Datos</legend>
                     <label for="Nombre">Nombre Completo</label>
-                    <input type="text" id="Nombre" name="Nombre">
+                    <input type="text" id="Nombre" name="Nombre" minlength="3" required title="Ingresa minimo 3 caracteres">
                     <label for="tipo-documento">Tipo de documento</label>
-                    <select name="tipo_documento" id="tipo-documento">
+                    <select name="tipo_documento" id="tipo-documento" required>
                         <option value="">Selecciona tu documento</option>
                         <option value="CC">Cedula de ciudadania</option>
                         <option value="TI">Tarjeta de identidad</option>
                         <option value="CE">Cedula extranjera</option>
                     </select>
                     <label for="documento">Numero de documento</label>
-                    <input type="text" id="documento" name="Numero_de_documento">
+                    <input type="text" id="documento" name="Numero_de_documento" pattern="[0-9]{6,10}" required title="Solo ingresa numeros. Ingresa entre 6 y 10 digitos">
                     <label for="gmail">Correo Electronico</label>
-                    <input type="email" id="gmail" name="Correo_Electronico">
+                    <input type="email" id="gmail" name="Correo_Electronico" required title="Ingresa un formato de correo permitido">
                     <label for="celular">Celular</label>
-                    <input type="tel" id="celular" name="celular">
+                    <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}" title="Los numeros de celular deben de empezar con 3. ingresa 10 digitos">
                 </fieldset>
                 <fieldset>
                     <legend>Tu Alquiler</legend>
                     <label for="fecha-alquiler">Fecha del alquiler</label>
-                    <input type="date" id="fecha-alquiler" name="fecha_de_alquiler">
+                    <input type="date" id="fecha-alquiler" name="fecha_de_alquiler" min="2026-11-01" max="2026-12-31" title="Ingresa una fecha entre 2026-11-01 y 2026-12-31" required>
                     <fieldset>
                         <legend>Tipo de bicicleta</legend>
                         <label for="Urbana">Urbana</label>
-                        <input type="radio" id="Urbana" name="bicicleta" value="Urbana">
+                        <input type="radio" id="Urbana" name="bicicleta" value="Urbana" required>
                         <label for="Montaña">Montaña</label>
                         <input type="radio" id="Montaña" name="bicicleta" value="Montaña">
                         <label for="Electrica">Electrica</label>
                         <input type="radio" id="Electrica" name="bicicleta" value="Electrica">
                     </fieldset>
                     <label for="plan">Plan</label>
-                    <select name="plan" id="plan">
+                    <select name="plan" id="plan" required>
+                        <option value="">Elije un plan</option>
                         <option value="1-hora">1 hora</option>
                         <option value="medio-día">Medio Día</option>
                         <option value="dia-completo">Día Completo</option>
                     </select>
                     <label for="cantidad-bicicletas">Cantidad De Bicicletas</label>
-                    <input type="number" id="cantidad-bicicletas" name="cantidad_bicicletas">
+                    <input type="number" id="cantidad-bicicletas" name="cantidad_bicicletas" min="1" max="6" required title="Elije una cantidad entre 1 y 6">
                     <label for="recorrido-guiado">Recorrido Guiado</label>
                     <select name="recorrido_guiado" id="recorrido-guiado">
+                        <option value="">Elije un recorrido</option>
                         <option value="ninguno">Ninguno</option>
                         <option value="rio-parques">Rio Parques</option>
                         <option value="sabores-barrio">Sabores Barrio</option>
                         <option value="reto-palmas">Reto Palmas</option>
                     </select>
                     <label for="comentarios">Comentarios</label>
-                    <textarea name="comentarios" id="comentarios"></textarea>
+                    <textarea name="comentarios" id="comentarios" maxlength="300" title="Superaste el maximo de caracteres"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Confirmación</legend>
                     <label for="politicas-alquiler">Acepto politicas de alquiler</label>
-                    <input type="checkbox" id="politicas-alquiler" name="aceptación_politicas_alquiler">
+                    <input type="checkbox" id="politicas-alquiler" name="aceptación_politicas_alquiler" required title="Acepta politicas de alquiler">
                 </fieldset>
                 <button type="submit">Enviar Formulario</button>
             </form>
