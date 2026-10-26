@@ -182,3 +182,95 @@ Justificación de controles
 1. Tipo de bicicleta — botones radio: Use radio porque la persona debe elegir una sola bicicleta entre urbana, montaña y eléctrica. Las opciones comparten el mismo name, así que no se pueden seleccionar varias al mismo tiempo y preferi esta porque visualmente siento que se puede ver mejor y mas comodo para el usuario que una lista desplegable.
 2. Plan — lista desplegable (select): Preferi una lista desplegable porque la persona debe escoger un plan de una lista ya hecha y definida: 1 hora, medio día o día completo.
 3. Recorrido guiado — lista desplegable (select): Use una lista desplegable para las rutas disponibles y la opción Ninguno, ya que el recorrido guiado es opcional y con esta  el usuario puede desplegar las opciones.
+
+Mini-reto 7
+
+1.
+- Campo:
+   Nombre
+- Dato de prueba:
+   ca
+- Resultado esperado:
+   No permite enviar: Tiene menos de 3 caracteres
+- Resultado obtenido:
+   Prolonga este texto a 3 caracteres o mas (actualmente tiene 2 caracteres).
+
+2.
+- Campo:
+   Numero Documento
+- Dato de prueba:
+   12345
+- Resultado esperado:
+   No permite enviar: tiene menos de 6 dígitos
+- Resultado obtenido:
+   Hazlo coincidir con el formato solicitado. 
+
+3.
+- Campo:
+   Numero Documento
+- Dato de prueba:
+   12AB34
+- Resultado esperado:
+   No permite enviar: No se pueden letras
+- Resultado obtenido:
+   Hazlo coincidir con el formato solicitado.
+
+4.
+- Campo:
+   Correo
+- Dato de prueba:
+   carlos
+- Resultado esperado:
+   No permite enviar: Ingresa un formato de gmail
+- Resultado obtenido:
+   Incluye "@" en la dirección de correo electronico. En "carlos" falta un simbolo "@".
+
+5.
+- Campo:
+   Celular
+- Dato de prueba:
+   1234567891
+- Resultado esperado:
+   No permite enviar: El número de empezar por 3
+- Resultado obtenido:
+   Hazlo coincidir con el formato solicitado.
+
+6.
+- Campo:
+   Celular
+- Dato de prueba:
+   30132545
+- Resultado esperado:
+   No permite enviar: Ingresa 10 digitos
+- Resultado obtenido:
+   Hazlo coincidir con el formato solicitado.
+
+7.
+- Campo:
+   Fecha
+- Dato de prueba:
+   2024-02-14
+- Resultado esperado:
+   No permite enviar: Fecha no valida
+- Resultado obtenido:
+   No me permite marcar esa fecha, y si intento un año anterior o un mes anterior al establecido aparecen inhabilitados, solo deje seleccionar una fecha dentro del rango.
+
+8.
+- Campo:
+   Cantidad
+- Dato de prueba:
+   9
+- Resultado esperado:
+   No permite enviar: El valor sobrepasa el limite
+- Resultado obtenido:
+   El valor debe ser menor o igual que 6.
+
+9.
+- Campo:
+   Politicas
+- Dato de prueba:
+   No marcada
+- Resultado esperado:
+   No permite enviar: No valido
+- Resultado obtenido:
+   Marca esta casilla si quieres continuar.
