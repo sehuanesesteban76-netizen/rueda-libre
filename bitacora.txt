@@ -117,3 +117,58 @@ Tabla de rutas utilizadas:
    paginas/tarifas.html#Lugar
 
 Las rutas relativas permiten conectar las páginas por la ubicación de cada archivo. Cuando el archivo de destino está dentro de una carpeta se escribe el nombre de esa carpeta y luego el del archivo. Cuando se necesita regresar a la carpeta anterior, se utiliza ../.
+
+Día 2: HTML semántico, accesibilidad y formularios
+Mini-reto 5: Estructura con significado 
+-Index
+HEADER
+├── Nombre del negocio
+├── Texto de bienvenida
+├── NAV: enlaces a Inicio, Tarifas y Reservas
+└── Imagen de portada
+
+MAIN
+├── SECTION: ¿Quiénes somos?
+├── SECTION: Nuestros servicios
+│   ├── ARTICLE: Alquiler de bicicletas
+│   ├── ARTICLE: Recorridos guiados
+│   └── ARTICLE: Taller básico
+├── Enlace: Reservar ahora
+├── SECTION: ¿Cómo alquilar?
+├── SECTION: Encuéntranos
+└── SECTION: Contáctanos
+
+FOOTER
+└── Información del negocio, correo y año
+
+-Tarifas
+HEADER
+├── Título de la página y nombre del negocio
+├── NAV: enlaces a Inicio, Tarifas y Reservas
+└── Imagen relacionada con las tarifas
+
+MAIN
+├── SECTION: Tarifas de alquiler de bicicletas
+│   └── Tabla de tarifas
+├── SECTION: Tarifas de recorridos
+│   └── Tabla de rutas y precios
+├── Enlace: Reservar ahora
+├── ASIDE: Información complementaria
+│   ├── Qué debes tener en cuenta
+│   └── Qué debes llevar
+└── Enlace: Volver al inicio
+
+FOOTER
+└── Información del negocio, correo y año
+
+-Reservas
+HEADER
+├── Título de la página y nombre del negocio
+├── Enlace de contacto por correo
+└── NAV: enlaces a Inicio, Tarifas y Reservas
+
+MAIN
+└── SECTION: Horario de atención
+
+FOOTER
+└── Información del negocio, correo y año
