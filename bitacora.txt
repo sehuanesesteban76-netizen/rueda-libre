@@ -183,7 +183,7 @@ Justificación de controles
 2. Plan — lista desplegable (select): Preferi una lista desplegable porque la persona debe escoger un plan de una lista ya hecha y definida: 1 hora, medio día o día completo.
 3. Recorrido guiado — lista desplegable (select): Use una lista desplegable para las rutas disponibles y la opción Ninguno, ya que el recorrido guiado es opcional y con esta  el usuario puede desplegar las opciones.
 
-Mini-reto 7
+Mini-reto 7: Reservas sin errores: validación y teclado
 
 1.
 - Campo:
@@ -274,3 +274,81 @@ Mini-reto 7
    No permite enviar: No valido
 - Resultado obtenido:
    Marca esta casilla si quieres continuar.
+
+Mini-reto 8: Rueda Libre v0.2 en línea: accesible y publicada 
+- Hallazgo y correción de "Audita las tres páginas con esta lista: textos alternativos (descriptivos o vacíos si la imagen es decorativa), jerarquía de encabezados, textos de enlace que se entiendan fuera de contexto, idioma del documento y recorrido completo con teclado"
+
+1. Texto descrptivo de imagen "logo bicicleta": Le cambie el nombre descrptivo a esta imagen para por si la imagen no cargaba o el que lo estaba leyendo es un lector de pagina pudiera dar la imagen mas descriptiva he imaginarsela como es. lo cambie de "Logo bocicleta" a "Bicicleta dentro de una maletin, representando la renta de bicicleta"
+2. Texto descriptivo enlace de encuentranos: Cambie el texto descriptivo de encuentranos a Conoce nuestra ubicación en google maps para asi darle mas contexto a nuestros clientes y sepan por que medio esta nuestra ubicación.
+3. Texto descriptivo enlace de gmail: Camibie el texto de contactanos porque asi podria haber confunsiones o se pensara que es por otra via, lo cambie a "Conoce nuestra ubicación en google maps"
+4. Texto descriptivo de imagen "Una de nuestras rutas": Cambie este nombre por bicicleta en una de nuestras rutas por que de este modo si la imagen no carga se puede entender mejor sobre que trata la imagen y si es un lector de imagen describirlo mejor.
+5. Texto descriptivo de imagen "Imagen relacionada a tarifas": Deje esta imagen si textp descriptivo porque es una imagen decorativa y el nombre era muy general.
+
+- Mapa de uso de resultado de contraste con los colores de la actividad
+
+1.
+- Combinación:
+   Blanco sobre Verde Ruta 
+- Contraste
+   5.31:1
+- Clasificación
+   Apta para texto normal 
+
+2.
+- Combinación:
+   Blanco sobre Naranja Pedal 
+- Contraste
+   2.22:1 
+- Clasificación:
+   No apta 
+
+3.
+- Combinación:
+   Azul Noche sobre Naranja Pedal 
+- Contraste:
+   7.20:1
+- Clasificación: 
+   Apta para texto normal
+
+4.
+- Combinación:
+   Azul Noche sobre Crema
+- Contraste: 
+   14.83:1 
+- Clasificación:
+   Apta para texto normal
+
+5.
+- Combinación:
+   Gris Asfalto sobre Crema
+- Contraste:
+   5.57:1
+- Clasificación:
+   Apta para texto normal
+
+6.
+-Combinación:
+   Verde Ruta sobre Crema
+- Contraste:
+   4.93:1
+- Clasificación:
+   Apta para texto normal
+
+7.
+- Combinación:
+   Naranja Pedal sobre Crema
+- Contraste:
+   2.06:1
+- Clasificación
+   No apta
+
+8.
+- Combinación:
+   Blanco sobre Azul Noche 
+- Contraste:
+   15.97:1 
+- Clasificación:
+   Apta para texto normal 
+
+- Enlace Git hub pages:
+   Pendiente, lo adjunto cuando el TL me verifique que mis actividades del dia 1 y 2 se enceuntran bien y listas para montarse a la rama principal.
