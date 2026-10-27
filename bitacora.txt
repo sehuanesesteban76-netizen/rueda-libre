@@ -361,3 +361,7 @@ Propiedades que hereda y no hereda:
    Al seleccionar el parrafo en DevTools muestra que hereda color y font-family desde body, background-color está aplicado al body, pero no se hereda al parrafo.
 
 Ademas en mi CSS declare las variables de colores, tipo de texto y espaciado con medida rm
+
+Mini-reto 10:Navegación con estados y sin conflictos
+Registración en DevTools del por que no da la clase:  
+   La causa del por que la clase no se aplica es porque en la etiqueta esta actuando tambien el id entonces por eso se aplica solo lo que se le dio el id pero no lo de la clase.
