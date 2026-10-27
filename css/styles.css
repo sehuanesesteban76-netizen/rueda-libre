@@ -25,3 +25,34 @@ h5,
 h6 {
     font-family: var(--fuente-titulo);
 }
+
+#menu a { 
+    color: var(--gris-asfalto); 
+}
+.activo {
+    color: var(--verde-ruta);
+}
+
+#menu a.activo{
+    color: var(--verde-ruta);
+}
+
+#menu a:hover,
+#menu a:focus{
+    color: var(--azul-noche);
+}
+
+.enlaces_accion{
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input:focus
+select:focus
+textarea:focus{
+    outline: 3px solid var(--azul-noche);
+}
