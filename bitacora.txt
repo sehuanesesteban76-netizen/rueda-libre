@@ -369,7 +369,7 @@ Registración en DevTools del por que no da la clase:
 Mini-reto 11: Todo en su lugar: modelo de caja
 
 -Medición del ancho de una tarjeta: box-sizing
-
+ 
 Seleccioné una tarjeta de servicio (article.tarjeta-servicio) y comparé su ancho en DevTools. Para la prueba usé un width temporal de 300px.
 Valor de box-sizing	          Ancho exterior medido
   border-box	                       300 px
