@@ -1,19 +1,19 @@
 :root {
-    --verde-ruta:#1E7A4F;
-    --naranja-pedal:#F39A2B;
-    --azul-noche:#14213D;
-    --crema:#FAF6EF;
-    --gris-asfalto:#5B6470;
-    --fuente-titulo: "Montserrat",sans-serif ;
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+    --fuente-titulo: "Montserrat", sans-serif;
     --fuente-texto: "Open Sans", Arial, sans-serif;
-    --espacio-pequeño: 0,5rem;
+    --espacio-pequeño: 0.5rem;
     --espacio-mediano: 1rem;
     --espacio-grande: 2rem
 }
 
 body {
     background-color: var(--crema);
-    color: var(--gris-asfalto); 
+    color: var(--gris-asfalto);
     font-family: var(--fuente-texto);
 }
 
@@ -26,33 +26,102 @@ h6 {
     font-family: var(--fuente-titulo);
 }
 
-#menu a { 
-    color: var(--gris-asfalto); 
+#menu a {
+    color: var(--gris-asfalto);
 }
+
 .activo {
     color: var(--verde-ruta);
 }
 
-#menu a.activo{
+#menu .activo {
     color: var(--verde-ruta);
 }
 
 #menu a:hover,
-#menu a:focus{
+#menu a:focus {
     color: var(--azul-noche);
 }
 
-.enlaces_accion{
+.enlaces_accion {
     background-color: var(--azul-noche);
     color: var(--crema);
     padding: 0.75rem 1.25rem;
-    border-radius: 0.5rem;
+    border-radius: var(--espacio-pequeño);
     text-decoration: none;
     display: inline-block;
 }
 
-input:focus
-select:focus
-textarea:focus{
+input:focus,
+select:focus,
+textarea:focus {
     outline: 3px solid var(--azul-noche);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portada-inicio {
+    min-height: 60vh;
+}
+
+.tarjeta-servicio {
+    padding: var(--espacio-mediano);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: var(--espacio-mediano);
+    margin-bottom: var(--espacio-mediano);
+}
+
+.tarjeta-servicio img {
+    width: 100%;
+    height: auto;
+}
+
+td,
+th {
+    padding: var(--espacio-mediano);
+    border: 1px solid;
+
+}
+
+thead {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    
+}
+
+table {
+    border-collapse: collapse;
+    margin: var(--espacio-mediano);
+}
+
+label {
+    display: block;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+}
+fieldset:not(fieldset fieldset){
+    margin-bottom: var(--espacio-mediano);
+}
+
+button {
+    padding: var(--espacio-mediano);
+    border-radius: var(--espacio-mediano);
+    border: 1px solid;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 0 2rem;
 }
