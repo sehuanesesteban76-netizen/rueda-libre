@@ -365,3 +365,12 @@ Ademas en mi CSS declare las variables de colores, tipo de texto y espaciado con
 Mini-reto 10:Navegación con estados y sin conflictos
 Registración en DevTools del por que no da la clase:  
    La causa del por que la clase no se aplica es porque en la etiqueta esta actuando tambien el id entonces por eso se aplica solo lo que se le dio el id pero no lo de la clase.
+
+Mini-reto 11: Todo en su lugar: modelo de caja
+
+-Medición del ancho de una tarjeta: box-sizing
+
+Seleccioné una tarjeta de servicio (article.tarjeta-servicio) y comparé su ancho en DevTools. Para la prueba usé un width temporal de 300px.
+Valor de box-sizing	          Ancho exterior medido
+  border-box	                       300 px
+ content-box	333,6 px            (aprox. 334 px)
