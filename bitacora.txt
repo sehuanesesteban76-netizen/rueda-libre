@@ -374,3 +374,11 @@ Seleccioné una tarjeta de servicio (article.tarjeta-servicio) y comparé su anc
 Valor de box-sizing	          Ancho exterior medido
   border-box	                       300 px
  content-box	333,6 px            (aprox. 334 px)
+
+
+ MiniReto 12: lanzamiento de Rueda Libre v1.0
+- Etiqueta nuevo: la agregué al servicio de bicicletas eléctricas y quedó ubicada en la esquina superior de la tarjeta, sin desplazar el contenido.
+- Enlace de WhatsApp: lo añadí a las tres páginas con la imagen visible WhatsApp. Queda fijo en la esquina inferior derecha y no tapa el contenido al final de la página.
+- Revisión final: comprobé que las tres páginas comparten la hoja de estilos y que el menú, los botones y el pie se ven consistentes. Revise los enlaces, imágenes, fuentes y la consola con el Network y recorrí el sitio con el teclado, el foco se ve en los enlaces.
+- Publicación: Esta pendiente hasta que le de unos detalled de diseño que me gustaria hacerle.
+- Mejora pendiente o futura: Me gudtaria hacer una organización mejor de mis clases y me gustaria agregarle unas imagenes representativas de las bicicletas y darle mas colores.
