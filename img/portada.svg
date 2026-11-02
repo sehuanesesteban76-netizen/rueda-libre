@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Rueda Libre</title>
+  <desc id="desc">Logo de Rueda Libre con una bicicleta estilizada y una ruta abierta.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="154" cy="206" r="77" stroke="#D2B48C" stroke-width="12"/>
+    <circle cx="345" cy="206" r="77" stroke="#D2B48C" stroke-width="12"/>
+    <path d="M154 206l55-91 61 91h-116l66-91h53l72 91M247 115l-22-25h-34" stroke="#D2B48C" stroke-width="12"/>
+    <path d="M345 206l37-51" stroke="#D2B48C" stroke-width="12"/>
+    <path d="M289 79c20-25 53-34 79-25-5 28-25 51-55 57-15 3-28-4-24-17z" fill="#D2B48C" stroke="#D2B48C" stroke-width="5"/>
+    <path d="M305 101c13-16 28-27 47-36" stroke="#D2B48C" stroke-width="5"/>
+  </g>
+  <text x="465" y="169" fill="#D2B48C" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800" letter-spacing="-2">RUEDA</text>
+  <text x="465" y="244" fill="#D2B48C" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800" letter-spacing="-2">LIBRE</text>
+  <path d="M468 270h210" stroke="#D2B48C" stroke-width="8" stroke-linecap="round"/>
+  <text x="700" y="278" fill="#D2B48C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="3">MUÉVETE A TU RITMO</text>
+</svg>
