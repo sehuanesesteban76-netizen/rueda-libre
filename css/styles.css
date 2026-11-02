@@ -27,20 +27,20 @@ h6 {
 }
 
 #menu a {
-    color: var(--gris-asfalto);
+    color: var(--crema);
 }
 
 .activo {
-    color: var(--verde-ruta);
+    color: var(--naranja-pedal);
 }
 
 #menu .activo {
-    color: var(--verde-ruta);
+    color: var(--naranja-pedal);
 }
 
 #menu a:hover,
 #menu a:focus {
-    color: var(--azul-noche);
+    color: var(--naranja-pedal);
 }
 
 .enlaces_accion {
@@ -48,8 +48,9 @@ h6 {
     color: var(--crema);
     padding: 0.75rem 1.25rem;
     border-radius: var(--espacio-pequeño);
-    text-decoration: none;
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    margin: var(--espacio-mediano);
 }
 
 input:focus,
@@ -66,15 +67,13 @@ main {
     max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
 }
 
-.portada-inicio {
-    min-height: 60vh;
-}
 
 .tarjeta-servicio {
     padding: var(--espacio-mediano);
-    border: 1px solid var(--gris-asfalto);
+    border: 2px dotted var(--gris-asfalto);
     border-radius: var(--espacio-mediano);
     margin-bottom: var(--espacio-mediano);
     flex: 1 1 15rem;
@@ -124,7 +123,7 @@ button {
 
 #menu li {
     display: inline-block;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .contenedor-servicios{
@@ -134,20 +133,6 @@ button {
     align-items: center;
 }
 
-.tipo-bicicletas {
-    display: flex;
-    gap: var(--espacio-mediano);
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.tipo-bicicletas li {
-    flex: 1 1 8rem;
-    border: 1px solid var(--gris-asfalto);
-    padding: var(--espacio-pequeño);
-    border-radius: var(--espacio-pequeño);
-}
 
 .etiqueta-nuevo {
     position: absolute;
@@ -165,13 +150,83 @@ button {
     padding-top: 2.5rem;
 }
 
-.tipo-bicicletas li.bicicleta-electrica {
-    padding-top: 3rem;
-}
 
 .whatsapp-fijo {
     position: fixed;
     bottom: var(--espacio-mediano);
     right: var(--espacio-mediano);
 }
- 
+
+.encabezado-descripcion {
+    display: block;
+    padding: var(--espacio-mediano);
+    width: 35rem;
+    
+}
+
+.encabezado-imagen img {
+    display: block;
+    width: 20rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.encabezado-enlaces {
+    display: flex;
+    justify-content: end;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--espacio-mediano);
+    align-items: center;
+    margin: var(--espacio-grande);
+    background-color: var(--gris-asfalto);
+    color: var(--crema);
+    min-height: 40vh;
+    border-radius: var(--espacio-mediano);
+    padding: var(--espacio-mediano);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    min-height: 15vh;
+    margin: var(--espacio-grande);
+    background-color: var(--gris-asfalto);
+    color: var(--crema);
+    padding: var(--espacio-mediano);
+    border-radius: var(--espacio-mediano);
+    align-items: center;
+    gap: var(--espacio-pequeño);
+}
+footer div{
+    display: block;
+}
+
+.enlaces {
+    color: var(--crema);
+}
+
+.center-characteres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlace-comunicate {
+    background-color: var(--crema);
+    color: var(--gris-asfalto);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--espacio-pequeño);
+    display: block;
+    width: fit-content;
+    margin: var(--espacio-mediano);
+}
+
+a {
+    text-decoration: none;
+}
