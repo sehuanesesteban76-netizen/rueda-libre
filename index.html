@@ -14,20 +14,28 @@
 </head>
 
 <body>
-    <header class="portada-inicio">
-        <h1>Rueda Libre</h1>
-        <p>Bienvenido a Rueda Libre, aqui podras conocer nosotros, saber nuestros servicios y mucho mas, si quieres
-            saber donde estamos ubicados ve a <a href="#Encuentranos">encuentranos</a></p>
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html" class="activo">Inicio</a></li>
-                <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
-                <li><a href="paginas/reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
-        <br>
+    <header>
 
-        <img src="img/portada.jpg" alt="Portada de Rueda Libre">
+        <div class="encabezado-imagen">
+            <img src="img/portada.svg" alt="Portada de Rueda Libre">
+        </div>
+
+        <div class="encabezado-descripcion">
+            <h1>Rueda Libre</h1>
+            <p>Bienvenido a Rueda Libre, aqui podras conocer nosotros, saber nuestros servicios y mucho mas, si quieres
+                saber donde estamos ubicados ve a <a href="#Encuentranos" class="enlaces">encuentranos</a></p>
+        </div>
+
+        <div class="encabezado-enlaces">
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html" class="activo">Inicio</a></li>
+                    <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
+                    <li><a href="paginas/reservas.html">Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
 
@@ -59,17 +67,9 @@
                         <li>Tienes un descuento si arriendas mas de 4 horas</li>
                     </ul>
 
-                    <img src="img/bicicleta.jpg"
+                    <img src="img/bicicleta.png"
                         alt="Bicicleta dentro de una maletin, representando la renta de bicicleta">
-                    
-                    <ul class="tipo-bicicletas">
-                            <li>Bcicleta Urbana</li>
-                            <li class="bicicleta-electrica">
-                                Bicicleta Electrica
-                                <span class="etiqueta-nuevo">Nuevo</span>
-                            </li>
-                            <li>Bcicleta Montaña</li>
-                        </ul>
+
                 </article>
                 <article class="tarjeta-servicio">
                     <h3>Recorridos Guiados</h3>
@@ -107,6 +107,18 @@
                     </ul>
 
                 </article>
+                <article class="tarjeta-servicio bicicleta-electrica">
+                    <h3>Bicicleta Electrica</h3>
+                    <p>Conoce nuestro producto, aventurate y ven por la tuya</p>
+                    <h4>Beneficios</h4>
+                    <ul>
+                        <li>Mayor movilidad y rapidez.</li>
+                        <li>Mayor comodidad en el trayecto</li>
+                    </ul>
+                    <span class="etiqueta-nuevo">Nuevo</span>
+                    <img src="img/Bicicleta_Electrica.png" alt="Bicicleta Electrica">
+
+                </article>
             </article>
         </section>
         <a href="paginas/reservas.html" class="enlaces_accion">Reservar ahora</a>
@@ -132,22 +144,26 @@
             <h3>Via correo</h3>
             <a href="mailto:sehuanesesteban76@gmail.com">Comunicate con nosotros por email</a>
 
-            <a href="paginas/tarifas.html">Conoce nuestras tarifas </a>
+            <a href="paginas/tarifas.html" class="enlaces_accion">Conoce nuestras tarifas </a>
         </section>
     </main>
 
     <footer>
-        <h2>Conoce mas sobre nosotros</h2>
-
-        <h3>Nombre Negocio</h3>
-        <p>Rueda-Libre</p>
-
-        <h3>Correo</h3>
-        <a href="mailto:sehuanesesteban76@gmail.com">sehuanesesteban76@gmail.com</a>
-
-        <h3>Año</h3>
-        <p>2026</p>
-
+        <div>
+            <h2>Conoce mas sobre nosotros:</h2>
+        </div>
+        <div>
+            <h3>Nombre Negocio</h3>
+            <p>Rueda-Libre</p>
+        </div>
+        <div>
+            <h3>Correo</h3>
+            <a href="mailto:sehuanesesteban76@gmail.com" class="enlaces">sehuanesesteban76@gmail.com</a>
+        </div>
+        <div>
+            <h3>Año</h3>
+            <p>2026</p>
+        </div>
     </footer>
     <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-fijo">
         <img src="img/whatsapp.svg" alt="Contactar por WhatsApp">
