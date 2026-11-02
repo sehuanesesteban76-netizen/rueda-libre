@@ -382,3 +382,7 @@ Valor de box-sizing	          Ancho exterior medido
 - Revisión final: comprobé que las tres páginas comparten la hoja de estilos y que el menú, los botones y el pie se ven consistentes. Revise los enlaces, imágenes, fuentes y la consola con el Network y recorrí el sitio con el teclado, el foco se ve en los enlaces.
 - Publicación: Esta pendiente hasta que le de unos detalled de diseño que me gustaria hacerle.
 - Mejora pendiente o futura: Me gudtaria hacer una organización mejor de mis clases y me gustaria agregarle unas imagenes representativas de las bicicletas y darle mas colores.
+- Le agregue a mis tres paginas div, para la decoración y estilados, no encontre una etiqueta semantica que me ayude con esa separación. Explicación:
+   Uso de div para organizar el encabezado (Solo en el index): agrupé el título y la descripción, los enlaces de navegación y la imagen para poder acomodar cada grupo con CSS y Flexbox, estos grupos no representan por sí solos una sección temática ni contenido independiente, por eso div.
+   Uso de div para centrar "Reservar ahora" y "vuelve a nuestro inicio": lo use como contenedor para centrar el enlace, porque si se lo daba solo al enlace no me centraba refiriendose a todo el renglon si no que solo al enlace.
+   Uso de div para organizar el footer de las tres paginas: Lo use ya que al usar Flexbox los subtitulos y contenido quedaban dispersos y los organice con div para que se entendiera y cada contenido este con su subtitulo.
