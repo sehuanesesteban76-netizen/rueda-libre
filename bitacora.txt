@@ -352,8 +352,8 @@ Mini-reto 8: Rueda Libre v0.2 en línea: accesible y publicada
    Apta para texto normal 
 
 - Enlace Git hub pages:
-   Pendiente, lo adjunto cuando el TL me verifique que mis actividades del dia 1 y 2 se enceuntran bien y listas para montarse a la rama principal.
-
+   https://sehuanesesteban76-netizen.github.io/rueda-libre/
+   
 Día 3: Fundamentos CSS y box model
 
 Mini-reto 9: La identidad de Rueda Libre
@@ -381,7 +381,7 @@ Valor de box-sizing	          Ancho exterior medido
 - Etiqueta nuevo: la agregué al servicio de bicicletas eléctricas y quedó ubicada en la esquina superior de la tarjeta, sin desplazar el contenido.
 - Enlace de WhatsApp: lo añadí a las tres páginas con la imagen visible WhatsApp. Queda fijo en la esquina inferior derecha y no tapa el contenido al final de la página.
 - Revisión final: comprobé que las tres páginas comparten la hoja de estilos y que el menú, los botones y el pie se ven consistentes. Revise los enlaces, imágenes, fuentes y la consola con el Network y recorrí el sitio con el teclado, el foco se ve en los enlaces.
-- Publicación: Esta pendiente hasta que le de unos detalled de diseño que me gustaria hacerle.
+- Publicación: https://sehuanesesteban76-netizen.github.io/rueda-libre/
 - Mejora pendiente o futura: Me gudtaria hacer una organización mejor de mis clases y me gustaria agregarle unas imagenes representativas de las bicicletas y darle mas colores.
 - Le agregue a mis tres paginas div, para la decoración y estilados, no encontre una etiqueta semantica que me ayude con esa separación. Explicación:
    Uso de div para organizar el encabezado (Solo en el index): agrupé el título y la descripción, los enlaces de navegación y la imagen para poder acomodar cada grupo con CSS y Flexbox, estos grupos no representan por sí solos una sección temática ni contenido independiente, por eso div.
