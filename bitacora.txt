@@ -392,3 +392,11 @@ Semana 2
 Día 1: Encabezado Flexbox
 
 Cuando estrecho un poco la pagina el contenido de el encabezado y el pie de pagina se acomodan y si no caben en el renglon saltan a un renglon de abajo
+
+Día 2: La flota en cuadricula: Grid
+
+Pruebas de numero de columans que se ven en:
+
+- 1280px: Se ven 3 columnas en las primeras dos filas y se ve 1 columna en la ultima fila que fue porque agregue mi ultima tarjeta y se acomodo abajo en otra fila.
+- 900px: Se ven 3 columnas en las primeras  dos filas y se ve 1 columa en la ultima fila por la misma razon que explica en la anterior observación.
+- 500px: Se ve solo 1 columna.
