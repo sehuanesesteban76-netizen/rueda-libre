@@ -389,14 +389,33 @@ Valor de box-sizing	          Ancho exterior medido
    Uso de div para organizar el footer de las tres paginas: Lo use ya que al usar Flexbox los subtitulos y contenido quedaban dispersos y los organice con div para que se entendiera y cada contenido este con su subtitulo.
 
 Semana 2
-Día 1: Encabezado Flexbox
+Día 1: 
+Mini-reto 1: Encabezado Flexbox
 
 Cuando estrecho un poco la pagina el contenido de el encabezado y el pie de pagina se acomodan y si no caben en el renglon saltan a un renglon de abajo
 
-Día 2: La flota en cuadricula: Grid
+Mini-reto 2: La flota en cuadricula: Grid
 
 Pruebas de numero de columans que se ven en:
 
 - 1280px: Se ven 3 columnas en las primeras dos filas y se ve 1 columna en la ultima fila que fue porque agregue mi ultima tarjeta y se acomodo abajo en otra fila.
 - 900px: Se ven 3 columnas en las primeras  dos filas y se ve 1 columa en la ultima fila por la misma razon que explica en la anterior observación.
 - 500px: Se ve solo 1 columna.
+
+Mini-reto 3 – Layout en dos Dimensiones
+
+1. PORTADA
+Herramienta utilizada: CSS Grid
+Justificación: Utilice Grid porque necesitaba dividir la portada en dos columnas: una para el texto y otra para la imagen. Esta herramienta me permitio organizar los elementos en filas y columnas, con unidades fr para distribuir el espacio disponible.
+
+2. GALERÍA DE RUTAS
+Herramienta utilizada: CSS Grid
+Justificación: Utilice Grid para distribuir las tres tarjetas de rutas en una misma fila, elegi esta herramienta porque necesitaba organizar los elementos en columnas y mantener una distribución uniforme entre las tarjetas.
+
+3. RESERVAS
+Herramienta utilizada: CSS Grid
+Justificación: Utilice Grid para dividir la sección de reservas en dos columnas. Asigné 2fr al formulario y 1fr a la información de contacto, permitiendo que el formulario ocupara el doble de espacio.
+
+4. FILA DEL FORMULARIO
+Herramienta utilizada: CSS Grid y Flexbox.
+Justificación: Utilice Grid para organizar los campos de número de documento y celular en dos columnas del mismo tamaño. Tambien utilice Flexbox dentro de cada campo para colocar la etiqueta encima de su respectivo elemento de entrada.
