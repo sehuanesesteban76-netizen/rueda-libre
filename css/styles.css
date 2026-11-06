@@ -4,6 +4,10 @@
     --azul-noche: #14213D;
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
+    --cafe-oscuro: #7f5539;
+    --beige: #e6ccb2;
+    --beige-oscuro: #ddb892;
+    --cafe-claro: #b08968;
     --fuente-titulo: "Montserrat", sans-serif;
     --fuente-texto: "Open Sans", Arial, sans-serif;
     --espacio-pequeño: 0.5rem;
@@ -12,7 +16,7 @@
 }
 
 body {
-    background-color: var(--crema);
+    background-color: var(--beige);
     color: var(--gris-asfalto);
     font-family: var(--fuente-texto);
 }
@@ -66,6 +70,7 @@ textarea:focus {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: var(--espacio-mediano);
 }
 
 main {
@@ -83,6 +88,8 @@ main {
     border-radius: var(--espacio-mediano);
     margin-bottom: var(--espacio-mediano);
     flex: 1 1 15rem;
+    width: auto;
+    max-width: 20rem;
 }
 
 .tarjeta-servicio img {
@@ -149,7 +156,8 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: var(--espacio-mediano);
-    align-items: center;
+    align-items: start;
+    max-width: 58rem;
 }
 
 
@@ -167,6 +175,7 @@ button {
 .bicicleta-electrica {
     position: relative;
     padding-top: 2.5rem;
+    width: max-content;
 }
 
 
@@ -220,7 +229,7 @@ header {
     gap: var(--espacio-mediano);
     margin: var(--espacio-mediano);
     padding: var(--espacio-mediano);
-    background-color: var(--gris-asfalto);
+    background-color: var(--cafe-oscuro);
     color: var(--crema);
     border-radius: var(--espacio-mediano);
 }
@@ -303,6 +312,17 @@ a {
     width: fit-content;
 }
 
+section{ 
+    display: flex;
+    flex-direction: column;
+    padding: var(--espacio-mediano);
+    align-items: center;
+    background-color: var(--beige-oscuro);
+    margin: var(--espacio-mediano) auto;
+    max-width: 58rem;
+    border-radius: var(--espacio-mediano);
+}
+
 
 /* Diseño seccion Portada - estilo Movil */
 
@@ -314,6 +334,8 @@ a {
     padding: var(--espacio-mediano);
     align-items: center;
     margin: 0 auto;
+    background-color: var(--beige-oscuro);
+    border-radius: var(--espacio-mediano);
     
 }
 
