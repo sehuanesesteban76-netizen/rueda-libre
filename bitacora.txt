@@ -419,3 +419,28 @@ Justificación: Utilice Grid para dividir la sección de reservas en dos columna
 4. FILA DEL FORMULARIO
 Herramienta utilizada: CSS Grid y Flexbox.
 Justificación: Utilice Grid para organizar los campos de número de documento y celular en dos columnas del mismo tamaño. Tambien utilice Flexbox dentro de cada campo para colocar la etiqueta encima de su respectivo elemento de entrada.
+
+
+Mini-reto 4: Rueda Libre v1.5 — diseño mobile-first
+
+Reorganice los estilos para que la versión base funcione en móvil y los cambios de tableta y escritorio se apliquen con media queries.
+
+Comportamiento por ancho:
+
+- En movil, la portada, la flota, las reservas y los campos del formulario se organizan en una columna.
+- Desde 768 px la portada y las reservas pasan a dos columnas. Los campos de número de documento y teléfono quedan en la misma fila.
+- La flota muestra dos columnas desde 768 px y tres desde 1200 px.
+- En movil, el encabezado muestra primero la marca y debajo los enlaces del menú. Desde 768 px, el encabezado vuelve a una distribución horizontal.
+- El pie se organiza en columna en móvil y en fila desde 768 px.
+
+Decisiones de diseño:
+
+Use Grid para distribuir la portada, las tarjetas de la flota, las reservas y los campos del formulario en filas y columnas use Flexbox para acomodar el encabezado, el menú y el pie, porque sus elementos deben alinearse y cambiar de dirección según el ancho.
+
+Problemas responsive encontrados al revisar los estilos y soluciones:
+
+1. Las reservas empezaban en dos columnas y dejaba poco espacio en movil. Deje una columna como estilo base y puse las dos columnas desde 768 px.
+2. Los campos de documento y teléfono tambien empezaban en dos columnas quedaban estrechos y desporpocionales en el celular. Los apile en móvil y los puse en una misma fila desde 768 px.
+3. Las celdas de las tablas tenían mucho relleno y la tabla no estaba limitada al ancho del contenedor, reduje el relleno, ajuste el tamaño de letra para móvil y limite la tabla al ancho disponible.
+4. Las imagenes podian superar el ancho de su contenedor. Añadi una regla general para limitar su ancho y conservar su proporción.
+
