@@ -456,3 +456,7 @@ Mini-reto 1: Prototipo nocturno con Play CDN
 En la semana 2 construí un botón con Bootstrap, usando Bootstrap se podia construir con las clases btn y btn-primary. btn aplica el estilo base de botón y btn-primary le da el estilo de color principal de Bootstrap. Con Tailwind construi la apariencia combinando utilidades pequeñas directamente en el enlace.
 
 Una diferencia clave es que Bootstrap ofrece clases para aplicar componentes o estilos ya preparados y Tailwind permite formar el diseño combinando utilidades pequeñas directamente en el HTML y uno lo va a haciendo al gusto de uno y que le guste.
+
+Mini-reto 2: Del prototipo al proyecto real: CLI y botones
+
+Busque las clases bg-slate-400 y text-5xl, que uso en index.html y encontre sus reglas en src/output.css. También busqué bg-pink-800 que no uso, y no estaba, Tailwind genera el CSS de las clases detectadas en los archivos indicados en la configuración content por eso no incluye clases que no encuentra.
