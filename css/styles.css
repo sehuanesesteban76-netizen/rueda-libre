@@ -5,6 +5,7 @@
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
     --cafe-oscuro: #7f5539;
+    --beige-claro: #ede0d4;
     --beige: #e6ccb2;
     --beige-oscuro: #ddb892;
     --cafe-claro: #b08968;
@@ -90,11 +91,12 @@ main {
     flex: 1 1 15rem;
     width: auto;
     max-width: 20rem;
+    background-color: var(--beige);
 }
 
 .tarjeta-servicio img {
-    width: 100%;
-    height: auto;
+    width: 30rem;
+    height: 15rem;
 }
 
 td,
@@ -285,21 +287,24 @@ a {
     margin: 0 auto;
 }
 
-.tarjeta-flota {
+.tarjeta-flota {    
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: var(--espacio-mediano);
-    border: 2px solid var(--gris-asfalto);
+    border: 1.5px solid var(--gris-asfalto);
     border-radius: var(--espacio-mediano);
-    gap: var(--espacio-mediano);
+    gap: 0.5rem;
     width: auto;
     height: auto;
+    background-color: var(--beige);
     
 }
 .tarjeta-flota img {
     width: 13rem;
-    height: auto;
+    height: 11rem;
+    border-radius: var(--espacio-mediano);
+    margin-bottom: var(--espacio-mediano);
 }
 
 .tarjeta-flota a {

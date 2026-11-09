@@ -444,3 +444,15 @@ Problemas responsive encontrados al revisar los estilos y soluciones:
 3. Las celdas de las tablas tenían mucho relleno y la tabla no estaba limitada al ancho del contenedor, reduje el relleno, ajuste el tamaño de letra para móvil y limite la tabla al ancho disponible.
 4. Las imagenes podian superar el ancho de su contenedor. Añadi una regla general para limitar su ancho y conservar su proporción.
 
+
+Semana 3
+
+Mini-reto 1: Prototipo nocturno con Play CDN
+
+- Construi la sección principal de Rueda Nocturna en nocturna/prototipo.html. Añadi el título principal, el subtítulo, los datos destacados y el enlace Inscríbete y solo puse un h1 para el título.
+- Cargue Tailwind CSS con Play CDN y aplique sus utilidades directamente en las clases de los elementos HTML para dar espaciado, tamaños, colores y tipografia. No Use una hoja de estilos propia ni clases de Bootstrap en el prototipo.
+- Para el enlace Inscríbete, use utilidades de Tailwind para darle apariencia de botón: La etiqueta la puse en un contenedor para centrarla en le documento, inline-block para que el enlace se comporte como una caja y reciba relleno, rounded-lg para redondear las esquinas, bg-slate-700 para dar el color de fondo, p-2 para darle espacio interior a los lados, font-sans	para dar una familia tipografica sans serif, text-xl para el tamaño del texto, font-semibold	hace el texto seminegrita, border y border-black para hacer que tenga un borde de una lnea delgada y color negro, m-6 para un espacio afuera del boton y con mx-auto para centrarla a la pagina.
+
+En la semana 2 construí un botón con Bootstrap, usando Bootstrap se podia construir con las clases btn y btn-primary. btn aplica el estilo base de botón y btn-primary le da el estilo de color principal de Bootstrap. Con Tailwind construi la apariencia combinando utilidades pequeñas directamente en el enlace.
+
+Una diferencia clave es que Bootstrap ofrece clases para aplicar componentes o estilos ya preparados y Tailwind permite formar el diseño combinando utilidades pequeñas directamente en el HTML y uno lo va a haciendo al gusto de uno y que le guste.
