@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de componentes | Rueda Nocturna</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-slate-100 text-slate-800">
+    <main class="mx-auto max-w-5xl space-y-10 px-4 py-8">
+
+        <header class="space-y-2 text-center">
+            <h1 class="text-4xl font-bold text-slate-900">Kit de componentes
+            </h1>
+            <p class="text-slate-600">Rueda Nocturna v0.1</p>
+        </header>
+
+        <section aria-labelledby="titulo-botones" class="mx-auto max-w-5xl space-y-4">
+            <h2 id="titulo-botones" class="text-2xl font-bold text-slate-900">Botones</h2>
+
+            <div class="flex flex-wrap gap-4">
+                <button type="button"
+                    class="rounded-xl bg-slate-700 px-4 py-2 font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300">
+                    Principal
+                </button>
+
+                <button type="button"
+                    class="rounded-xl bg-slate-200 px-4 py-2 font-semibold text-slate-800 transition hover:bg-slate-300 focus:outline-none focus:ring-4 focus:ring-slate-300">
+                    Secundario
+                </button>
+
+                <button type="button"
+                    class="rounded-xl border border-slate-700 px-4 py-2 font-semibold text-slate-700 transition hover:bg-slate-200 focus:outline-none focus:ring-4 focus:ring-slate-300">
+                    Contorno
+                </button>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-card" class="mx-auto max-w-5xl space-y-4">
+            <h2 id="titulo-card" class="text-2xl font-bold text-slate-900">
+                Card de ruta
+            </h2>
+
+            <article class="max-w-md overflow-hidden rounded-xl border border-slate-300 bg-white shadow-md transition hover:border-slate-500 hover:shadow-xl">
+                <img src="../img/saboresDeBarrio.png"
+                    alt="Ciclistas recorriendo una calle de Medellín"
+                    class="h-48 w-full object-cover">
+
+                <div class="space-y-4 p-4">
+                    <span class="inline-block rounded-xl bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-800">
+                        Nivel: Fácil
+                    </span>
+
+                    <h3 class="text-xl font-bold text-slate-900">
+                        Luces del Centro
+                    </h3>
+
+                    <ul class="space-y-2">
+                        <li class="flex justify-between gap-4">
+                            <span class="text-slate-500">Distancia</span>
+                            <strong>10 km</strong>
+                        </li>
+                        <li class="flex justify-between gap-4">
+                            <span class="text-slate-500">Duración</span>
+                            <strong>2 h</strong>
+                        </li>
+                        <li class="flex justify-between gap-4">
+                            <span class="text-slate-500">Punto de encuentro</span>
+                            <strong>Sede Rueda Libre</strong>
+                        </li>
+                    </ul>
+
+                    <div class="border-t border-slate-200 pt-4">
+                        <p class="text-sm text-slate-500">Precio</p>
+                        <p class="text-2xl font-bold text-slate-900">$55.000</p>
+                    </div>
+
+                    <button type="button"
+                        class="w-full rounded-xl bg-slate-700 px-4 py-2 font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300">
+                        Reservar ruta
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <section aria-labelledby="titulo-alertas" class="mx-auto max-w-5xl space-y-4">
+            <h2 id="titulo-alertas" class="text-2xl font-bold text-slate-900">
+                Alertas
+            </h2>
+
+            <div class="space-y-4">
+                <div class="rounded-xl border-l-4 border-sky-600 bg-sky-100 p-4 text-sky-900">
+                    <h3 class="font-bold">Información</h3>
+                    <p>Las rutas salen desde la sede de Rueda Libre.</p>
+                </div>
+
+                <div role="status" class="rounded-xl border-l-4 border-emerald-600 bg-emerald-100 p-4 text-emerald-900">
+                    <h3 class="font-bold">Reserva confirmada</h3>
+                    <p>Tu lugar en la ruta quedó reservado.</p>
+                </div>
+
+                <div class="rounded-xl border-l-4 border-amber-600 bg-amber-100 p-4 text-amber-900">
+                    <h3 class="font-bold">Advertencia</h3>
+                    <p>Recuerda llegar 15 minutos antes de la salida.</p>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-formulario" class="mx-auto max-w-5xl space-y-4">
+            <h2 id="titulo-formulario" class="text-2xl font-bold text-slate-900">
+                Campos de formulario
+            </h2>
+
+            <form class="max-w-md space-y-4">
+                <div class="space-y-2">
+                    <label for="correo" class="block font-semibold text-slate-800">
+                        Correo electrónico
+                    </label>
+                    <input id="correo" name="correo" type="email"
+                        placeholder="hola@correo.com"
+                        aria-describedby="ayuda-correo"
+                        class="w-full rounded-xl border border-slate-300 bg-white px-4 py-2 text-slate-800 focus:border-slate-500 focus:outline-none focus:ring-4 focus:ring-slate-300">
+                    <p id="ayuda-correo" class="text-sm text-slate-500">
+                        Con este correo te enviaremos la confirmación.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <label for="celular" class="block font-semibold text-slate-800">
+                        Celular
+                    </label>
+                    <input id="celular" name="celular" type="tel"
+                        placeholder="315 248 28 16"
+                        aria-describedby="ayuda-celular"
+                        class="w-full rounded-xl border border-slate-300 bg-white px-4 py-2 text-slate-800 focus:border-slate-500 focus:outline-none focus:ring-4 focus:ring-slate-300">
+                    <p id="ayuda-celular" class="text-sm text-slate-500">Incluye tu numero para contactarte.</p>
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
