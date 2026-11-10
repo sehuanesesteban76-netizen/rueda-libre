@@ -468,3 +468,12 @@ Use rounded-xl para mantener el mismo redondeo en botones, card, alertas y campo
 Mantuve la escala de espaciado con p-4, px-4, py-2, gap-4 y space-y-4.
 Use colores slate para los botones y los textos principales, las alertas usan celeste para información, verde para exito y ambar para advertencia.
 Los botones y campos muestran un anillo visible al recibir el foco con el teclado.
+
+
+Mini-reto 5: Maquetación de la landing
+
+- Organice la pagina con header, main, secciones con id y footer. Los enlaces del encabezado apuntan a las secciones de la landing usando anclas o rutas como #rutas y #como-funciona.
+- Repeti el mismo contenedor centrado en los bloques principales con mx-auto, max-w-6xl y px-4, asi el contenido comparte un ancho maximo y el mismo relleno lateral.
+- Use Flexbox en el encabezado para alinear en una fila el logo, los enlaces y el botón Inscríbete, tambien use Flexbox en el pie para distribuir sus tres bloques en una fila.
+- Use Grid para las tres tarjetas de rutas con grid-cols-3 y para los cuatro pasos con grid-cols-4, elegi Grid porque necesitaba repartir elementos en varias columnas.
+- Reutilice en las tarjetas y botones las clases del kit de componentes, conservando sus estilos de borde, redondeo, sombras y estados hover y focus.
