@@ -477,3 +477,24 @@ Mini-reto 5: Maquetación de la landing
 - Use Flexbox en el encabezado para alinear en una fila el logo, los enlaces y el botón Inscríbete, tambien use Flexbox en el pie para distribuir sus tres bloques en una fila.
 - Use Grid para las tres tarjetas de rutas con grid-cols-3 y para los cuatro pasos con grid-cols-4, elegi Grid porque necesitaba repartir elementos en varias columnas.
 - Reutilice en las tarjetas y botones las clases del kit de componentes, conservando sus estilos de borde, redondeo, sombras y estados hover y focus.
+
+Mini-reto 6: La noche cabe en tu celular — responsive
+
+Problemas observados al revisar las clases de escritorio antes de adaptarlas:
+1. Las rutas tenían tres columnas fijas y sus tarjetas quedaban estrechas en celular. Cambié la cuadrícula a una columna base, dos desde sm (640 px) y tres desde lg (1024 px).
+2. Los cuatro pasos tenían cuatro columnas fijas y el texto quedaba comprimido. Ahora se muestran en una columna, dos desde md (768 px) y cuatro desde lg (1024 px).
+3. El encabezado intentaba mostrar logo, enlaces y botón en una sola fila. En móvil ahora se apilan los elementos y se ocultan los enlaces; el botón Inscríbete permanece visible. Desde md el encabezado vuelve a la fila.
+4. La franja de inscripción y el pie también quedaban apretados en una fila. En móvil se apilan; desde md se organizan en fila.
+5. Ajusté tamaños de título y espacios con prefijos para que crezcan en pantallas mayores.
+
+Resultados de las pruebas en modo dispositivo de DevTools:
+
+| Ancho  | Rutas     | Pasos     | Encabezado                              | Franja y pie |
+|---|--- |---|-------|-----------|
+| 360 px | 1 columna | 1 columna | Apilado; enlaces ocultos; botón visible | Apilados |
+| 768 px | 2 columnas | 2 columnas | En fila; enlaces visibles | En fila |
+| 1024 px | 3 columnas | 4 columnas | En fila; enlaces visibles | En fila |
+| 1280 px | 3 columnas | 4 columnas | En fila; enlaces visibles | En fila |
+
+A 360 px el contenido se ve en una columna y no se observa desplazamiento horizontal. Los estilos base sin prefijo corresponden al celular sm:, md: y lg: aplican cambios desde 640, 768 y 1024 px.
+
