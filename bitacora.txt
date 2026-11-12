@@ -507,3 +507,31 @@ Mini-reto 7: Marca nocturna — tema propio y modo oscuro
 - Configure darkMode: "media" para que las clases dark: sigan la preferencia de apariencia del sistema tambien probe la pagina en modo claro y oscuro desde DevTools mire las partes que no se distinguian bien y ajuste sus colores para mejorar la lectura de las palabras y parrafos.
 - Revise el contraste de combinaciones importantes, el texto blanco sobre Verde Ruta tiene contraste aproximado de 5.31:1 mayor al minimo 4.5:1 para texto normal, evite usar Verde Ruta como texto sobre Azul Noche porque esa combinación no alcanza el contraste requerido aunque me gustaba como se podria ver.
 
+
+Mini-reto 8: Codigo legible y veredicto — Bootstrap vs Tailwind
+
+1. Repeticiones identificadas que se repiten antes de refactorizar
+- Las clases de botón Reservar se repetian 3 veces en las tarjetas.
+- El conjunto de clases base de la card se repetia 3 veces.
+- El formato de las filas de datos (distancia, duración y punto de encuentro) aparecia 9 veces.
+- La clase de los enlaces del menu se repetía 3 veces.
+
+2. Reutilización con @apply
+- Cree tres clases en @layer components dentro de input.css: .boton-encabezado, .boton-reserva y .boton-franja.
+- Reemplace las listas largas de clases repetidas de los botones de la landing por esas clases, conserve aparte las clases de las cards, manteniendo la misma estructura que el kit.
+- Ordene las utilidades del HTML por grupos: distribución y tamaños, espaciado, tipografia, color y estados responsive, hover, focus y dark.
+
+3. Tamaño del CSS
+- Genere output.css con Tailwind 3.4.17 y la opción --minify.
+- Tamaño del archivo minificado en disco: 20.969 bytes (aprox. 20,48 KiB).
+- Tailwind entrega el CSS generado y no requiere un JavaScript de runtime para aplicar estas utilidades.
+- Busqué el proyecto Portafolio disponible y encontré Tailwind Play CDN, no Bootstrap. La medición de Bootstrap queda pendiente hasta ubicar la versión correspondiente.
+
+4. Comparativa y recomendación
+| Criterio | Bootstrap | Tailwind en Rueda Nocturna |
+|---|---|---|
+| Curva de aprendizaje | En mi experiencia, crear un botón fue directo con btn y btn-primary; ofrece clases de componentes ya preparadas. | Al principio tuve que aprender utilidades como flex, gap, px y text. Después pude combinar las utilidades directamente para formar el diseño. |
+| Personalización | Los estilos y componentes conocidos ayudan a empezar; una apariencia muy distinta puede requerir reglas adicionales. | En esta landing pude usar la paleta, las fuentes, los breakpoints y el modo claro/oscuro de la marca. |
+| Tamaño final | Pendiente: la carpeta Portafolio revisada carga Tailwind Play CDN, no Bootstrap. Falta ubicar la versión Bootstrap y medir CSS y JavaScript en DevTools Network. | output.css minificado pesa 20.969 bytes en disco (20,48 KiB). El tamaño transferido en Network todavía debe comprobarse. Tailwind no requiere JavaScript de runtime. |
+| Casos de uso | Útil para armar rápido páginas con componentes comunes y estilos predeterminados. | Útil cuando se quiere una interfaz propia y control detallado de estilos, como Rueda Nocturna. |
+Recomendación provisional: mantener Tailwind para Rueda Libre porque la landing requiere colores, tipografia, responsive y modo oscuro propios y el proyecto ya implementa esos cambios con utilidades y tres clases reutilizables para botones.

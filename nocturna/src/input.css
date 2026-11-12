@@ -1,3 +1,18 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .boton-encabezado {
+        @apply inline-flex items-center rounded-xl px-4 py-2 font-semibold bg-verde-ruta text-crema transition hover:bg-naranja-pedal hover:text-azul-noche focus:outline-none focus:ring-4 focus:ring-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-crema dark:focus:ring-amarillo-farol;
+    }
+
+    .boton-reserva {
+        @apply block w-full rounded-xl px-4 py-2 text-center font-semibold bg-verde-ruta text-white transition hover:bg-azul-noche focus:outline-none focus:ring-4 focus:ring-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-crema dark:focus:ring-amarillo-farol;
+    }
+
+    .boton-franja {
+        @apply inline-flex items-center rounded-xl border border-gris-asfalto bg-crema px-4 py-2 font-semibold text-azul-noche transition hover:bg-naranja-pedal hover:text-azul-noche focus:outline-none focus:ring-4 focus:ring-azul-noche dark:border-crema dark:bg-gris-asfalto dark:text-crema dark:hover:bg-azul-noche dark:hover:text-crema dark:focus:ring-amarillo-farol;
+    }
+}
