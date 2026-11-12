@@ -535,3 +535,20 @@ Mini-reto 8: Codigo legible y veredicto — Bootstrap vs Tailwind
 | Tamaño final | Pendiente: la carpeta Portafolio revisada carga Tailwind Play CDN, no Bootstrap. Falta ubicar la versión Bootstrap y medir CSS y JavaScript en DevTools Network. | output.css minificado pesa 20.969 bytes en disco (20,48 KiB). El tamaño transferido en Network todavía debe comprobarse. Tailwind no requiere JavaScript de runtime. |
 | Casos de uso | Útil para armar rápido páginas con componentes comunes y estilos predeterminados. | Útil cuando se quiere una interfaz propia y control detallado de estilos, como Rueda Nocturna. |
 Recomendación provisional: mantener Tailwind para Rueda Libre porque la landing requiere colores, tipografia, responsive y modo oscuro propios y el proyecto ya implementa esos cambios con utilidades y tres clases reutilizables para botones.
+
+Mini-reto 9: Contrarreloj 1 — inscripción a Rueda Nocturna
+
+- Tiempo de implementación registrado: 45 minutos.
+- Agregue a la landing un formulario semantico dividido en grupos con fieldset y legend.
+- Ingrese nombre completo, correo, celular, ruta, día de salida, acompañantes, experiencia, bicicleta propia y aceptación de condiciones cada control le di un label asociado.
+- Aplique validación nativa: required en todos los controles como minlength=3 para el nombre, pattern 3[0-9]{9}, maxlength=10 y title para el celular; min=0 y max=3 para acompañantes.
+- Organice los campos en una columna móvil y dos desde md. Reutilicé los estilos de campos del kit y sus variantes dark: y focus: .
+
+- Pruebas: 
+ 1. Envio del formulario vacio: No deja enviar el formulario porque los campos son obligatorios.
+ 2. Datos incorrectos:
+      - Nombre con menos de tres letras: Me dio error y dice prolonga el texto a 3 caracteres.
+      - Telefono: Me pide formato valido 
+      - Gmail: Me pide formato valido
+ 3. Cuando lleno el formulario se envis pero no hay un destino.
+ 4. Se recorre bien.
