@@ -492,9 +492,18 @@ Resultados de las pruebas en modo dispositivo de DevTools:
 | Ancho  | Rutas     | Pasos     | Encabezado                              | Franja y pie |
 |---|--- |---|-------|-----------|
 | 360 px | 1 columna | 1 columna | Apilado; enlaces ocultos; botón visible | Apilados |
-| 768 px | 2 columnas | 2 columnas | En fila; enlaces visibles | En fila |
-| 1024 px | 3 columnas | 4 columnas | En fila; enlaces visibles | En fila |
-| 1280 px | 3 columnas | 4 columnas | En fila; enlaces visibles | En fila |
+| 768 px | 2 columnas | 2 columnas | En fila; enlaces visibles             | En fila |
+| 1024 px | 3 columnas | 4 columnas | En fila; enlaces visibles            | En fila |
+| 1280 px | 3 columnas | 4 columnas | En fila; enlaces visibles            | En fila |
 
 A 360 px el contenido se ve en una columna y no se observa desplazamiento horizontal. Los estilos base sin prefijo corresponden al celular sm:, md: y lg: aplican cambios desde 640, 768 y 1024 px.
+
+
+Mini-reto 7: Marca nocturna — tema propio y modo oscuro
+
+- Mantuve Tailwind 3.4.17. En esta versión configure el tema en tailwind.config.js, porque @theme corresponde a Tailwind 4 extendi los colores con verde-ruta (#1E7A4F), naranja-pedal (#F39A2B), azul-noche (#14213D), crema (#FAF6EF), gris-asfalto (#5B6470) y amarillo-farol (#FFD166).
+- Añadi Montserrat y Open Sans a la configuración de fuentes, cargue ambas desde Google Fonts y aplique sus utilidades en la landing y en la pagina de componentes.
+- Reemplace los colores genericos de Tailwind por los colores de la marca en index.html y componentes.html. Para el modo oscuro agregue clases dark: a fondos, textos, tarjetas, bordes, botones, alertas y campos.
+- Configure darkMode: "media" para que las clases dark: sigan la preferencia de apariencia del sistema tambien probe la pagina en modo claro y oscuro desde DevTools mire las partes que no se distinguian bien y ajuste sus colores para mejorar la lectura de las palabras y parrafos.
+- Revise el contraste de combinaciones importantes, el texto blanco sobre Verde Ruta tiene contraste aproximado de 5.31:1 mayor al minimo 4.5:1 para texto normal, evite usar Verde Ruta como texto sobre Azul Noche porque esa combinación no alcanza el contraste requerido aunque me gustaba como se podria ver.
 
