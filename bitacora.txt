@@ -552,3 +552,11 @@ Mini-reto 9: Contrarreloj 1 — inscripción a Rueda Nocturna
       - Gmail: Me pide formato valido
  3. Cuando lleno el formulario se envis pero no hay un destino.
  4. Se recorre bien.
+
+Semana 3 — Mini-reto 10: Contrarreloj 2: un solo ecosistema
+
+- Enlaces locales: Añadi el enlace Rueda Nocturna a los menus de Inicio, Tarifas y Reservas. En la landing, el logo vuelve al inicio de Rueda Libre y Reserva tu bici lleva a Reservas, comprobe que los archivos de destino existen y llevan a donde corresponde.
+- Identidad compartida: los cinco colores de marca comunes y las fuentes Montserrat y Open Sans coinciden entre el CSS del rueda librey la configuración de Tailwind 3.4.17, agregue al pie de la landing el correo y los horarios del sitio principal.
+- Bootstrap: Omiti la integración de boostrap, esa se la hare en otro proyecto.
+- Tiempo: De nuevo me pase de tiempo, pero me siento bien porque estoy aprendiendo, pero mejorrare esa parte.
+- Pendiente: No hice adjunte ni subi a github pages porque primero mirare si todos mis mini-retos se llevan acabo con exito y adjunto esta rama main.
