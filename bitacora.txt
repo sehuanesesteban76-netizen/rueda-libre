@@ -553,10 +553,21 @@ Mini-reto 9: Contrarreloj 1 — inscripción a Rueda Nocturna
  3. Cuando lleno el formulario se envis pero no hay un destino.
  4. Se recorre bien.
 
-Semana 3 — Mini-reto 10: Contrarreloj 2: un solo ecosistema
+Mini-reto 10: Contrarreloj 2: un solo ecosistema
 
 - Enlaces locales: Añadi el enlace Rueda Nocturna a los menus de Inicio, Tarifas y Reservas. En la landing, el logo vuelve al inicio de Rueda Libre y Reserva tu bici lleva a Reservas, comprobe que los archivos de destino existen y llevan a donde corresponde.
 - Identidad compartida: los cinco colores de marca comunes y las fuentes Montserrat y Open Sans coinciden entre el CSS del rueda librey la configuración de Tailwind 3.4.17, agregue al pie de la landing el correo y los horarios del sitio principal.
 - Bootstrap: Omiti la integración de boostrap, esa se la hare en otro proyecto.
 - Tiempo: De nuevo me pase de tiempo, pero me siento bien porque estoy aprendiendo, pero mejorrare esa parte.
 - Pendiente: No hice adjunte ni subi a github pages porque primero mirare si todos mis mini-retos se llevan acabo con exito y adjunto esta rama main.
+
+Mini-reto 11: Contrarreloj 3: requerimiento de última hora
+
+- Añadí la sección Planes Rueda Nocturna despues de Rutas, con los planes Individual, Pareja y Grupo, sus precios y todos los beneficios solicitados.
+- La cuadricula usa una columna en movil y tres desde lg. Las tres tarjetas repiten el relleno p-5 y la estructura flex-col, en escritorio el grid estira las tarjetas de la fila a la misma altura. mt-auto coloca los enlaces Inscribirme al final.
+- Destaque Pareja con borde de 4 px Amarillo Farol, fondo diferente y la etiqueta textual Mas elegido, el borde y el fondo tienen variantes dark: y la etiqueta conserva texto para que el enfasis no dependa solo del color.
+- Contraste calculado: Azul Noche sobre Amarillo Farol 11.08:1, Crema sobre Gris Asfalto 5.57:1, Azul Noche sobre Crema 14.83:1. Las combinaciones superan 4.5:1 para texto normal.
+- Tiempo medido: 1 hora 
+- DevTools Computed: Individual mostro contenido de 305.063 × 350.400 px, Pareja 298.663 × 344 px y Grupo 305.075 × 350.400 px. Las tres mostraron padding de 20 px por lado, sumando contenido, relleno y borde, el tamaño exterior queda aproximadamente en 346.67 × 392 px para cada una. Pareja tiene el borde de 4 px y por eso su área interior es un poco menor, su tamaño exterior coincide con las demás.
+- Prueba movil 360 px: Las tarjetas se apilan en una columna y no hay scroll horizontal.
+- Revisión visual: el modo oscuro se ve bien y los botones quedan al final y alineados en escritorio.
