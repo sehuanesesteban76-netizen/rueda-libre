@@ -101,13 +101,6 @@ Aprendi a organizar una pagina con etiquetas HTML, crear estilos con CSS y Tailw
 
 Me intereso que hay que probar el sitio en varios tamaños de pantalla y con el teclado y tambien es importante volver a revisar los enlaces cuando se publica una version nueva.
 
-## Pendiente para cerrar la entrega
-
-- Integrar los cambios finales en main y revisar la version publicada en GitHub Pages.
-- Abrir las paginas publicadas y probar sus enlaces.
-- Ensayar la demo en menos de tres minutos.
-- Anotar el tiempo que tomo la demo y el comentario real de un compañero.
-
 - Autor
 
 GitHub: [sehuanesesteban76-netizen](https://github.com/sehuanesesteban76-netizen)
