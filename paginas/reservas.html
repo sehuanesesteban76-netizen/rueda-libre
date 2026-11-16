@@ -22,13 +22,14 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="tarifas.html">Tarifas y rutas</a></li>
                 <li><a href="reservas.html" class="activo">Reservas</a></li>
+                <li><a href="../nocturna/index.html">Rueda Nocturna</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Formulario de reserva</h2>
         <div class="contenedor-reservas">
             <section class="formulario-reservas">
+                <h2>Formulario de reserva</h2>
                 <form action="#" method="post">
                     <fieldset>
                         <legend>Tus Datos</legend>
@@ -42,18 +43,18 @@
                             <option value="TI">Tarjeta de identidad</option>
                             <option value="CE">Cedula extranjera</option>
                         </select>
-                        <div class="fila-campo">
-                            <div class="campo">
+                        <span class="fila-campo">
+                            <span class="campo">
                                 <label for="documento">Numero de documento</label>
                                 <input type="text" id="documento" name="Numero_de_documento" pattern="[0-9]{6,10}"
                                     required title="Solo ingresa numeros. Ingresa entre 6 y 10 digitos">
-                            </div>
-                            <div class="campo">
+                            </span>
+                            <span class="campo">
                                 <label for="celular">Celular</label>
                                 <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}"
                                     title="Los numeros de celular deben de empezar con 3. ingresa 10 digitos">
-                            </div>
-                        </div>
+                            </span>
+                        </span>
                         <label for="gmail">Correo Electronico</label>
                         <input type="email" id="gmail" name="Correo_Electronico" required
                             title="Ingresa un formato de correo permitido">
@@ -111,8 +112,8 @@
                 <dl>
                     <dt>Lunes a viernes</dt>
                     <dd>7:00 am - 7:00 pm</dd>
-                    <dt>Lunes a viernes</dt>
-                    <dd>7:00 am - 7:00 pm</dd>
+                    <dt>Fines de semana</dt>
+                    <dd>6:00 am - 2:00 pm</dd>
                 </dl>
                 <h3>Ubicación</h3>
                 <a href="https://maps.app.goo.gl/2CJFavqfNsYux3vZA" target="_blank">Encuentranos.</a>
@@ -136,8 +137,9 @@
             <p>Fines de semana: 6:00am - 2:00 pm</p>
         </div>
     </footer>
+
     <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-fijo">
-        <img src="img/whatsapp.svg" alt="Contactar por WhatsApp">
+        <img src="../img/whatsapp.svg" alt="Contactar por WhatsApp">
     </a>
 </body>
 

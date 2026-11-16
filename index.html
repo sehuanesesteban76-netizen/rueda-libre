@@ -15,15 +15,14 @@
 
 <body>
     <header>
+        <div class="encabezado-marca">
+            <picture class="encabezado-imagen">
+                <img src="img/portada.svg" alt="Portada de Rueda Libre">
+            </picture>
 
-        <picture class="encabezado-imagen">
-            <img src="img/portada.svg" alt="Portada de Rueda Libre">
-        </picture>
-
-        <div class="encabezado-descripcion">
-            <h1>Rueda Libre</h1>
-            <p>Bienvenido a Rueda Libre, aqui podras conocer nosotros, saber nuestros servicios y mucho mas, si quieres
-                saber donde estamos ubicados ve a <a href="#Encuentranos" class="enlaces">encuentranos</a></p>
+            <div class="encabezado-descripcion">
+                <h1>Rueda Libre</h1>
+            </div>
         </div>
 
         <div class="encabezado-enlaces">
@@ -32,6 +31,7 @@
                     <li><a href="index.html" class="activo">Inicio</a></li>
                     <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
                     <li><a href="paginas/reservas.html">Reservas</a></li>
+                    <li><a href="nocturna/index.html">Rueda Nocturna</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,31 +44,11 @@
             <div class="portada-texto">
                 <h2>Descrubre Medellin sobre ruedas</h2>
                 <p>Bienvenido a Rueda Libre, aqui podras conocer nosotros, saber nuestros servicios y mucho mas, si
-                    quieres
-                    saber donde estamos ubicados ve a <a href="#Encuentranos" class="enlaces">encuentranos</a></p>
+                    quieres saber donde estamos ubicados ve a <a href="#Encuentranos" class="enlaces">encuentranos</a></p>
             </div>
-            <img src="img/Bicicleta de montaña sobre Medellín.png" alt="bicicleta de montaña sobre medellin">
+            <img src="img/Bicicleta_de_montaña_sobre_Medellín.png" alt="bicicleta de montaña sobre medellin">
         </section>
-        <section>
-            <h2>Nuestras rutas</h2>
-            <div class="contenedor-flota">
-                <article class="tarjeta-flota">
-                    <img src="img/rioYParques.png" alt="">
-                    <h3>Rio y parques</h3>
-                    <span>Facil</span>
-                </article>
-                <article class="tarjeta-flota">
-                    <img src="img/saboresDeBarrio.png" alt="">
-                    <h3>Sabores de barrio</h3>
-                    <span>Medio</span>
-                </article>
-                <article class="tarjeta-flota">
-                    <img src="img/retoPalmas.png" alt="">
-                    <h3>Reto palmas</h3>
-                    <span>Dificil</span>
-                </article>
-            </div>
-        </section>
+        
         <section>
             <h2>¿Quienes somos?</h2>
             <p>Somos una empresa en la que puedes hacer alquiler de bicicletas y adquirir nuestros servicios de
@@ -76,9 +56,29 @@
                 guias.</p>
         </section>
         <section>
+            <h2>Nuestras rutas</h2>
+            <div class="contenedor-flota">
+                <article class="tarjeta-flota">
+                    <img src="img/rioYParques.png" alt="Ciclistas en una ruta por parques de Medellín">
+                    <h3>Rio y parques</h3>
+                    <span><strong>Facil</strong></span>
+                </article>
+                <article class="tarjeta-flota">
+                    <img src="img/saboresDeBarrio.png" alt="Ciclistas recorriendo una ruta de sabores de barrio">
+                    <h3>Sabores de barrio</h3>
+                    <span><strong>Medio</strong></span>
+                </article>
+                <article class="tarjeta-flota">
+                    <img src="img/retoPalmas.png" alt="Ruta de ciclismo hacia Las Palmas">
+                    <h3>Reto palmas</h3>
+                    <span><strong>Dificil</strong></span>
+                </article>
+            </div>
+        </section>
+        <section>
             <h2>Nuestros servicios:</h2>
             <p>Mas adelante puedes ver los servicios que tenemos para ti.</p>
-            <article class="contenedor-servicios">
+            <div class="contenedor-servicios">
                 <article class="tarjeta-servicio">
                     <h3>Alquiler de bicicletas</h3>
                     <p>Con este servicio, puedes hacer uso de nuestras bicicletas por el tiempo que lo necesites, !si
@@ -97,7 +97,7 @@
                     </ul>
 
                     <img src="img/bicicleta.png"
-                        alt="Bicicleta dentro de una maletin, representando la renta de bicicleta">
+                        alt="Bicicleta dentro de una maletin, representando la renta de bicicleta" width="248" height="189">
 
                 </article>
                 <article class="tarjeta-servicio">
@@ -148,9 +148,9 @@
                     <img src="img/Bicicleta_Electrica.png" alt="Bicicleta Electrica">
 
                 </article>
-            </article>
+            </div>
+            <a href="paginas/reservas.html" class="enlaces_accion">Reservar ahora</a>
         </section>
-        <a href="paginas/reservas.html" class="enlaces_accion">Reservar ahora</a>
         <section>
             <h2>¿Cómo Alquilar?</h2>
             <p>En rueda-libre te acompañamos en cada paso.</p>
@@ -184,7 +184,7 @@
                     <h3>Urbana Clasica</h3>
                     <p>Comoda, liviana para las ciclorrutas.</p>
                     <h4>Precio por hora</h4>
-                    <p>$10.000</p>
+                    <p><strong>$10.000</strong></p>
                     <a href="paginas/reservas.html" class="enlaces_accion">Reservar</a>
                 </article>
                 <article class="tarjeta-flota">
@@ -192,7 +192,7 @@
                     <h3>Urbana Plegable</h3>
                     <p>Se dobla en segundos; ideal para combinar con el metro.</p>
                     <h4>Precio por hora</h4>
-                    <p>$12.000</p>
+                    <p><strong>$12.000</strong></p>
                     <a href="paginas/reservas.html" class="enlaces_accion">Reservar</a>
 
                 </article>
@@ -201,7 +201,7 @@
                     <h3>Montaña Trail</h3>
                     <p>Suspensión delantera y 21 cambios para las subidas.</p>
                     <h4>Precio por hora</h4>
-                    <p>$15.000</p>
+                    <p><strong>$15.000</strong></p>
                     <a href="paginas/reservas.html" class="enlaces_accion">Reservar</a>
                 </article>
                 <article class="tarjeta-flota">
@@ -209,7 +209,7 @@
                     <h3>Gravel Aventura</h3>
                     <p>Para rutas mixtas de asfalto y destapado.</p>
                     <h4>Precio por hora</h4>
-                    <p>$18.000</p>
+                    <p><strong>$18.000</strong></p>
                     <a href="paginas/reservas.html" class="enlaces_accion">Reservar</a>
                 </article>
                 <article class="tarjeta-flota">
@@ -217,15 +217,15 @@
                     <h3>Eléctrica Urbana</h3>
                     <p>Asistencia eléctrica con 45 km de autonomía.</p>
                     <h4>Precio por hora</h4>
-                    <p>$25.000</p>
+                    <p><strong>$25.000</strong></p>
                     <a href="paginas/reservas.html" class="enlaces_accion">Reservar</a>
                 </article>
                 <article class="tarjeta-flota">
                     <img src="img/Infantil.png" alt="Bicicleta Infantil">
                     <h3>Infantil</h3>
-                    <p>Para niños de 6 a 10 años.</p>
+                    <p>Disponible para niños de 6 a 10 años.</p>
                     <h4>Precio por hora</h4>
-                    <p>$8.000</p>
+                    <p><strong>$8.000</strong></p>
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
                 <article class="tarjeta-flota">
@@ -233,7 +233,7 @@
                     <h3>Tándem</h3>
                     <p>Para dos personas; perfecta para pasear en pareja.</p>
                     <h4>Precio por hora</h4>
-                    <p>$20.000</p>
+                    <p><strong>$20.000</strong></p>
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
             </div>

@@ -419,3 +419,166 @@ Justificación: Utilice Grid para dividir la sección de reservas en dos columna
 4. FILA DEL FORMULARIO
 Herramienta utilizada: CSS Grid y Flexbox.
 Justificación: Utilice Grid para organizar los campos de número de documento y celular en dos columnas del mismo tamaño. Tambien utilice Flexbox dentro de cada campo para colocar la etiqueta encima de su respectivo elemento de entrada.
+
+
+Mini-reto 4: Rueda Libre v1.5 — diseño mobile-first
+
+Reorganice los estilos para que la versión base funcione en móvil y los cambios de tableta y escritorio se apliquen con media queries.
+
+Comportamiento por ancho:
+
+- En movil, la portada, la flota, las reservas y los campos del formulario se organizan en una columna.
+- Desde 768 px la portada y las reservas pasan a dos columnas. Los campos de número de documento y teléfono quedan en la misma fila.
+- La flota muestra dos columnas desde 768 px y tres desde 1200 px.
+- En movil, el encabezado muestra primero la marca y debajo los enlaces del menú. Desde 768 px, el encabezado vuelve a una distribución horizontal.
+- El pie se organiza en columna en móvil y en fila desde 768 px.
+
+Decisiones de diseño:
+
+Use Grid para distribuir la portada, las tarjetas de la flota, las reservas y los campos del formulario en filas y columnas use Flexbox para acomodar el encabezado, el menú y el pie, porque sus elementos deben alinearse y cambiar de dirección según el ancho.
+
+Problemas responsive encontrados al revisar los estilos y soluciones:
+
+1. Las reservas empezaban en dos columnas y dejaba poco espacio en movil. Deje una columna como estilo base y puse las dos columnas desde 768 px.
+2. Los campos de documento y teléfono tambien empezaban en dos columnas quedaban estrechos y desporpocionales en el celular. Los apile en móvil y los puse en una misma fila desde 768 px.
+3. Las celdas de las tablas tenían mucho relleno y la tabla no estaba limitada al ancho del contenedor, reduje el relleno, ajuste el tamaño de letra para móvil y limite la tabla al ancho disponible.
+4. Las imagenes podian superar el ancho de su contenedor. Añadi una regla general para limitar su ancho y conservar su proporción.
+
+
+Semana 3
+
+Mini-reto 1: Prototipo nocturno con Play CDN
+
+- Construi la sección principal de Rueda Nocturna en nocturna/prototipo.html. Añadi el título principal, el subtítulo, los datos destacados y el enlace Inscríbete y solo puse un h1 para el título.
+- Cargue Tailwind CSS con Play CDN y aplique sus utilidades directamente en las clases de los elementos HTML para dar espaciado, tamaños, colores y tipografia. No Use una hoja de estilos propia ni clases de Bootstrap en el prototipo.
+- Para el enlace Inscríbete, use utilidades de Tailwind para darle apariencia de botón: La etiqueta la puse en un contenedor para centrarla en le documento, inline-block para que el enlace se comporte como una caja y reciba relleno, rounded-lg para redondear las esquinas, bg-slate-700 para dar el color de fondo, p-2 para darle espacio interior a los lados, font-sans	para dar una familia tipografica sans serif, text-xl para el tamaño del texto, font-semibold	hace el texto seminegrita, border y border-black para hacer que tenga un borde de una lnea delgada y color negro, m-6 para un espacio afuera del boton y con mx-auto para centrarla a la pagina.
+
+En la semana 2 construí un botón con Bootstrap, usando Bootstrap se podia construir con las clases btn y btn-primary. btn aplica el estilo base de botón y btn-primary le da el estilo de color principal de Bootstrap. Con Tailwind construi la apariencia combinando utilidades pequeñas directamente en el enlace.
+
+Una diferencia clave es que Bootstrap ofrece clases para aplicar componentes o estilos ya preparados y Tailwind permite formar el diseño combinando utilidades pequeñas directamente en el HTML y uno lo va a haciendo al gusto de uno y que le guste.
+
+Mini-reto 2: Del prototipo al proyecto real: CLI y botones
+
+Busque las clases bg-slate-400 y text-5xl, que uso en index.html y encontre sus reglas en src/output.css. También busqué bg-pink-800 que no uso, y no estaba, Tailwind genera el CSS de las clases detectadas en los archivos indicados en la configuración content por eso no incluye clases que no encuentra.
+
+
+Mini-reto 4: Kit de componentes Rueda Nocturna v0.1
+
+Use rounded-xl para mantener el mismo redondeo en botones, card, alertas y campos.
+Mantuve la escala de espaciado con p-4, px-4, py-2, gap-4 y space-y-4.
+Use colores slate para los botones y los textos principales, las alertas usan celeste para información, verde para exito y ambar para advertencia.
+Los botones y campos muestran un anillo visible al recibir el foco con el teclado.
+
+
+Mini-reto 5: Maquetación de la landing
+
+- Organice la pagina con header, main, secciones con id y footer. Los enlaces del encabezado apuntan a las secciones de la landing usando anclas o rutas como #rutas y #como-funciona.
+- Repeti el mismo contenedor centrado en los bloques principales con mx-auto, max-w-6xl y px-4, asi el contenido comparte un ancho maximo y el mismo relleno lateral.
+- Use Flexbox en el encabezado para alinear en una fila el logo, los enlaces y el botón Inscríbete, tambien use Flexbox en el pie para distribuir sus tres bloques en una fila.
+- Use Grid para las tres tarjetas de rutas con grid-cols-3 y para los cuatro pasos con grid-cols-4, elegi Grid porque necesitaba repartir elementos en varias columnas.
+- Reutilice en las tarjetas y botones las clases del kit de componentes, conservando sus estilos de borde, redondeo, sombras y estados hover y focus.
+
+Mini-reto 6: La noche cabe en tu celular — responsive
+
+Problemas observados al revisar las clases de escritorio antes de adaptarlas:
+1. Las rutas tenían tres columnas fijas y sus tarjetas quedaban estrechas en celular. Cambié la cuadrícula a una columna base, dos desde sm (640 px) y tres desde lg (1024 px).
+2. Los cuatro pasos tenían cuatro columnas fijas y el texto quedaba comprimido. Ahora se muestran en una columna, dos desde md (768 px) y cuatro desde lg (1024 px).
+3. El encabezado intentaba mostrar logo, enlaces y botón en una sola fila. En móvil ahora se apilan los elementos y se ocultan los enlaces; el botón Inscríbete permanece visible. Desde md el encabezado vuelve a la fila.
+4. La franja de inscripción y el pie también quedaban apretados en una fila. En móvil se apilan; desde md se organizan en fila.
+5. Ajusté tamaños de título y espacios con prefijos para que crezcan en pantallas mayores.
+
+Resultados de las pruebas en modo dispositivo de DevTools:
+
+| Ancho  | Rutas     | Pasos     | Encabezado                              | Franja y pie |
+|---|--- |---|-------|-----------|
+| 360 px | 1 columna | 1 columna | Apilado; enlaces ocultos; botón visible | Apilados |
+| 768 px | 2 columnas | 2 columnas | En fila; enlaces visibles             | En fila |
+| 1024 px | 3 columnas | 4 columnas | En fila; enlaces visibles            | En fila |
+| 1280 px | 3 columnas | 4 columnas | En fila; enlaces visibles            | En fila |
+
+A 360 px el contenido se ve en una columna y no se observa desplazamiento horizontal. Los estilos base sin prefijo corresponden al celular sm:, md: y lg: aplican cambios desde 640, 768 y 1024 px.
+
+
+Mini-reto 7: Marca nocturna — tema propio y modo oscuro
+
+- Mantuve Tailwind 3.4.17. En esta versión configure el tema en tailwind.config.js, porque @theme corresponde a Tailwind 4 extendi los colores con verde-ruta (#1E7A4F), naranja-pedal (#F39A2B), azul-noche (#14213D), crema (#FAF6EF), gris-asfalto (#5B6470) y amarillo-farol (#FFD166).
+- Añadi Montserrat y Open Sans a la configuración de fuentes, cargue ambas desde Google Fonts y aplique sus utilidades en la landing y en la pagina de componentes.
+- Reemplace los colores genericos de Tailwind por los colores de la marca en index.html y componentes.html. Para el modo oscuro agregue clases dark: a fondos, textos, tarjetas, bordes, botones, alertas y campos.
+- Configure darkMode: "media" para que las clases dark: sigan la preferencia de apariencia del sistema tambien probe la pagina en modo claro y oscuro desde DevTools mire las partes que no se distinguian bien y ajuste sus colores para mejorar la lectura de las palabras y parrafos.
+- Revise el contraste de combinaciones importantes, el texto blanco sobre Verde Ruta tiene contraste aproximado de 5.31:1 mayor al minimo 4.5:1 para texto normal, evite usar Verde Ruta como texto sobre Azul Noche porque esa combinación no alcanza el contraste requerido aunque me gustaba como se podria ver.
+
+
+Mini-reto 8: Codigo legible y veredicto — Bootstrap vs Tailwind
+
+1. Repeticiones identificadas que se repiten antes de refactorizar
+- Las clases de botón Reservar se repetian 3 veces en las tarjetas.
+- El conjunto de clases base de la card se repetia 3 veces.
+- El formato de las filas de datos (distancia, duración y punto de encuentro) aparecia 9 veces.
+- La clase de los enlaces del menu se repetía 3 veces.
+
+2. Reutilización con @apply
+- Cree tres clases en @layer components dentro de input.css: .boton-encabezado, .boton-reserva y .boton-franja.
+- Reemplace las listas largas de clases repetidas de los botones de la landing por esas clases, conserve aparte las clases de las cards, manteniendo la misma estructura que el kit.
+- Ordene las utilidades del HTML por grupos: distribución y tamaños, espaciado, tipografia, color y estados responsive, hover, focus y dark.
+
+3. Tamaño del CSS
+- Genere output.css con Tailwind 3.4.17 y la opción --minify.
+- Tamaño del archivo minificado en disco: 19.919 bytes (aprox. 19,45 KiB).
+- Tailwind entrega el CSS generado y no requiere un JavaScript de runtime para aplicar estas utilidades.
+- Busqué el proyecto Portafolio disponible y encontré Tailwind Play CDN, no Bootstrap. La medición de Bootstrap queda pendiente hasta ubicar la versión correspondiente.
+
+4. Comparativa y recomendación
+| Criterio | Bootstrap | Tailwind en Rueda Nocturna |
+|---|---|---|
+| Curva de aprendizaje | En mi experiencia, crear un botón fue directo con btn y btn-primary; ofrece clases de componentes ya preparadas. | Al principio tuve que aprender utilidades como flex, gap, px y text. Después pude combinar las utilidades directamente para formar el diseño. |
+| Personalización | Los estilos y componentes conocidos ayudan a empezar; una apariencia muy distinta puede requerir reglas adicionales. | En esta landing pude usar la paleta, las fuentes, los breakpoints y el modo claro/oscuro de la marca. |
+| Tamaño final |         | output.css minificado pesa 19.919 bytes en disco (19,45 KiB). |
+| Casos de uso | Útil para armar rápido páginas con componentes comunes y estilos predeterminados. | Útil cuando se quiere una interfaz propia y control detallado de estilos, como Rueda Nocturna. |
+Recomendación provisional: mantener Tailwind para Rueda Libre porque la landing requiere colores, tipografia, responsive y modo oscuro propios y el proyecto ya implementa esos cambios con utilidades y tres clases reutilizables para botones.
+
+Mini-reto 9: Contrarreloj 1 — inscripción a Rueda Nocturna
+
+- Tiempo de implementación registrado: 45 minutos.
+- Agregue a la landing un formulario semantico dividido en grupos con fieldset y legend.
+- Ingrese nombre completo, correo, celular, ruta, día de salida, acompañantes, experiencia, bicicleta propia y aceptación de condiciones cada control le di un label asociado.
+- Aplique validación nativa: required en todos los controles como minlength=3 para el nombre, pattern 3[0-9]{9}, maxlength=10 y title para el celular; min=0 y max=3 para acompañantes.
+- Organice los campos en una columna móvil y dos desde md. Reutilicé los estilos de campos del kit y sus variantes dark: y focus: .
+
+- Pruebas: 
+ 1. Envio del formulario vacio: No deja enviar el formulario porque los campos son obligatorios.
+ 2. Datos incorrectos:
+      - Nombre con menos de tres letras: Me dio error y dice prolonga el texto a 3 caracteres.
+      - Telefono: Me pide formato valido 
+      - Gmail: Me pide formato valido
+ 3. Cuando lleno el formulario se envis pero no hay un destino.
+ 4. Se recorre bien.
+
+Mini-reto 10: Contrarreloj 2: un solo ecosistema
+
+- Enlaces locales: Añadi el enlace Rueda Nocturna a los menus de Inicio, Tarifas y Reservas. En la landing, el logo vuelve al inicio de Rueda Libre y Reserva tu bici lleva a Reservas, comprobe que los archivos de destino existen y llevan a donde corresponde.
+- Identidad compartida: los cinco colores de marca comunes y las fuentes Montserrat y Open Sans coinciden entre el CSS del rueda librey la configuración de Tailwind 3.4.17, agregue al pie de la landing el correo y los horarios del sitio principal.
+- Bootstrap: Omiti la integración de boostrap, esa se la hare en otro proyecto.
+- Tiempo: De nuevo me pase de tiempo, pero me siento bien porque estoy aprendiendo, pero mejorrare esa parte.
+- Pendiente: No hice adjunte ni subi a github pages porque primero mirare si todos mis mini-retos se llevan acabo con exito y adjunto esta rama main.
+
+Mini-reto 11: Contrarreloj 3: requerimiento de última hora
+
+- Añadí la sección Planes Rueda Nocturna despues de Rutas, con los planes Individual, Pareja y Grupo, sus precios y todos los beneficios solicitados.
+- La cuadricula usa una columna en movil y tres desde lg. Las tres tarjetas repiten el relleno p-5 y la estructura flex-col, en escritorio el grid estira las tarjetas de la fila a la misma altura. mt-auto coloca los enlaces Inscribirme al final.
+- Destaque Pareja con borde de 4 px Amarillo Farol, fondo diferente y la etiqueta textual Mas elegido, el borde y el fondo tienen variantes dark: y la etiqueta conserva texto para que el enfasis no dependa solo del color.
+- Contraste calculado: Azul Noche sobre Amarillo Farol 11.08:1, Crema sobre Gris Asfalto 5.57:1, Azul Noche sobre Crema 14.83:1. Las combinaciones superan 4.5:1 para texto normal.
+- Tiempo medido: 1 hora 
+- DevTools Computed: Individual mostro contenido de 305.063 × 350.400 px, Pareja 298.663 × 344 px y Grupo 305.075 × 350.400 px. Las tres mostraron padding de 20 px por lado, sumando contenido, relleno y borde, el tamaño exterior queda aproximadamente en 346.67 × 392 px para cada una. Pareja tiene el borde de 4 px y por eso su área interior es un poco menor, su tamaño exterior coincide con las demás.
+- Prueba movil 360 px: Las tarjetas se apilan en una columna y no hay scroll horizontal.
+- Revisión visual: el modo oscuro se ve bien y los botones quedan al final y alineados en escritorio.
+
+
+MiniReto 12: Lanzamiento Rueda Nocturna, entrega y demo
+
+- Validacion W3C: Revise todas mis paginas aqui, y los errores que me dio lo arregle y ahora estan en check.
+- Capturas: guarde la landing en escritorio, en celular a 360 px y en modo oscuro dentro de la carpeta capturas.
+- Documentación: prepare el README con la descripción del proyecto, sus paginas, tecnologias, enlaces, capturas y aprendizajes.
+- Tamaño del CSS: output.css pesa 19.919 bytes en disco, aproximadamente 19,45 KiB.
+- Responsive: las pruebas registradas incluyen 360, 768, 1024 y 1280 px, tTambien revise el modo claro y el modo oscuro.
+- Publicación final: queda pendiente integrar los cambios de style-mobile en main y comprobar en GitHub Pages que las páginas y enlaces carguen correctamente.
+- Demo: La explicación y demostracion de la pagina se la mosytre a mi padre, Tiempo: 2 Minutos y 30 segundos, Comentario: Entendi bien como se conectan Rueda Libre y Rueda Nocturna y el como navegar enytre ellas,, me gusto ver la página desde el celular y el modo oscuro, recomiendaciom mostrar un poco mas el formulario y explicar que pasa cuando falta un dato.
