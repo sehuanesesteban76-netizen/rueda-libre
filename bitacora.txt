@@ -581,4 +581,4 @@ MiniReto 12: Lanzamiento Rueda Nocturna, entrega y demo
 - Tamaño del CSS: output.css pesa 19.919 bytes en disco, aproximadamente 19,45 KiB.
 - Responsive: las pruebas registradas incluyen 360, 768, 1024 y 1280 px, tTambien revise el modo claro y el modo oscuro.
 - Publicación final: queda pendiente integrar los cambios de style-mobile en main y comprobar en GitHub Pages que las páginas y enlaces carguen correctamente.
-- Demo: La explicación y demostracion de la pagina se la mosytre a mi padre, Tiempo: 8 Minutos, Comentario: Etendi bien como se conectan Rueda Libre y Rueda Nocturna y el como navegar enytre ellas,, me gusto ver la página desde el celular y el modo oscuro, recomiendaciom mostrar un poco mas el formulario y explicar que pasa cuando falta un dato.
+- Demo: La explicación y demostracion de la pagina se la mosytre a mi padre, Tiempo: 2 Minutos y 30 segundos, Comentario: Entendi bien como se conectan Rueda Libre y Rueda Nocturna y el como navegar enytre ellas,, me gusto ver la página desde el celular y el modo oscuro, recomiendaciom mostrar un poco mas el formulario y explicar que pasa cuando falta un dato.
