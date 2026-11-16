@@ -523,7 +523,7 @@ Mini-reto 8: Codigo legible y veredicto — Bootstrap vs Tailwind
 
 3. Tamaño del CSS
 - Genere output.css con Tailwind 3.4.17 y la opción --minify.
-- Tamaño del archivo minificado en disco: 20.969 bytes (aprox. 20,48 KiB).
+- Tamaño del archivo minificado en disco: 19.919 bytes (aprox. 19,45 KiB).
 - Tailwind entrega el CSS generado y no requiere un JavaScript de runtime para aplicar estas utilidades.
 - Busqué el proyecto Portafolio disponible y encontré Tailwind Play CDN, no Bootstrap. La medición de Bootstrap queda pendiente hasta ubicar la versión correspondiente.
 
@@ -532,7 +532,7 @@ Mini-reto 8: Codigo legible y veredicto — Bootstrap vs Tailwind
 |---|---|---|
 | Curva de aprendizaje | En mi experiencia, crear un botón fue directo con btn y btn-primary; ofrece clases de componentes ya preparadas. | Al principio tuve que aprender utilidades como flex, gap, px y text. Después pude combinar las utilidades directamente para formar el diseño. |
 | Personalización | Los estilos y componentes conocidos ayudan a empezar; una apariencia muy distinta puede requerir reglas adicionales. | En esta landing pude usar la paleta, las fuentes, los breakpoints y el modo claro/oscuro de la marca. |
-| Tamaño final | Pendiente: la carpeta Portafolio revisada carga Tailwind Play CDN, no Bootstrap. Falta ubicar la versión Bootstrap y medir CSS y JavaScript en DevTools Network. | output.css minificado pesa 20.969 bytes en disco (20,48 KiB). El tamaño transferido en Network todavía debe comprobarse. Tailwind no requiere JavaScript de runtime. |
+| Tamaño final |         | output.css minificado pesa 19.919 bytes en disco (19,45 KiB). |
 | Casos de uso | Útil para armar rápido páginas con componentes comunes y estilos predeterminados. | Útil cuando se quiere una interfaz propia y control detallado de estilos, como Rueda Nocturna. |
 Recomendación provisional: mantener Tailwind para Rueda Libre porque la landing requiere colores, tipografia, responsive y modo oscuro propios y el proyecto ya implementa esos cambios con utilidades y tres clases reutilizables para botones.
 
@@ -571,3 +571,14 @@ Mini-reto 11: Contrarreloj 3: requerimiento de última hora
 - DevTools Computed: Individual mostro contenido de 305.063 × 350.400 px, Pareja 298.663 × 344 px y Grupo 305.075 × 350.400 px. Las tres mostraron padding de 20 px por lado, sumando contenido, relleno y borde, el tamaño exterior queda aproximadamente en 346.67 × 392 px para cada una. Pareja tiene el borde de 4 px y por eso su área interior es un poco menor, su tamaño exterior coincide con las demás.
 - Prueba movil 360 px: Las tarjetas se apilan en una columna y no hay scroll horizontal.
 - Revisión visual: el modo oscuro se ve bien y los botones quedan al final y alineados en escritorio.
+
+
+MiniReto 12: Lanzamiento Rueda Nocturna, entrega y demo
+
+- Validacion W3C: Revise todas mis paginas aqui, y los errores que me dio lo arregle y ahora estan en check.
+- Capturas: guarde la landing en escritorio, en celular a 360 px y en modo oscuro dentro de la carpeta capturas.
+- Documentación: prepare el README con la descripción del proyecto, sus paginas, tecnologias, enlaces, capturas y aprendizajes.
+- Tamaño del CSS: output.css pesa 19.919 bytes en disco, aproximadamente 19,45 KiB.
+- Responsive: las pruebas registradas incluyen 360, 768, 1024 y 1280 px, tTambien revise el modo claro y el modo oscuro.
+- Publicación final: queda pendiente integrar los cambios de style-mobile en main y comprobar en GitHub Pages que las páginas y enlaces carguen correctamente.
+- Demo: La explicación y demostracion de la pagina se la mosytre a mi padre, Tiempo: 8 Minutos, Comentario: Etendi bien como se conectan Rueda Libre y Rueda Nocturna y el como navegar enytre ellas,, me gusto ver la página desde el celular y el modo oscuro, recomiendaciom mostrar un poco mas el formulario y explicar que pasa cuando falta un dato.
