@@ -79,7 +79,6 @@ Durante esta semana construi el proyecto Rueda Nocturna con Tailwind, cree sus c
     - Revise que en celular las rutas y los pasos se acomoden en una columna, y que en pantallas mayores aparezcan mas columnas.
     - Revise el modo claro y el modo oscuro.
     - Valide nocturna/index.html y paginas/reservas.html con W3C y pasaron la validación.
-    - Falta revisar los enlaces de la version final en GitHub Pages despues de integrar los cambios en main.
 
     Capturas
 
